@@ -1,11 +1,10 @@
 # SKYSPICE2KLAYOUT AnalogProPlus v12
 
-My AI-assisted SKY130 SPICE-to-KLayout helper flow for analog layout exploration.
+A hobby SKY130 SPICE-to-KLayout helper flow for analog layout exploration.
 
-I built this as a summer hobby project because I was frustrated with the usual `import spice` experience while playing with SKY130 analog circuits. I wanted a cleaner starting point inside KLayout: parse a SPICE/CDL netlist, generate or import the devices, place them in a useful way, write reports, and give me enough visual context to continue manual layout work.
+I built this as a summer hobby project, with AI assistance, because I was frustrated with the usual `import spice` experience while playing with SKY130 analog circuits. I wanted a cleaner starting point inside KLayout: parse a SPICE/CDL netlist, generate or import the devices, place them in a useful way, write reports, and give me enough visual context to continue manual layout work.
 
 This is not a commercial EDA tool, not a signoff flow, and not a replacement for analog layout skill. I still treat manual review, Magic DRC, extraction, LVS, and foundry rule checks as the real checks. This project is a playground for making SPICE-to-GDS exploration less painful.
-
 
 ## Contents
 
@@ -14,7 +13,9 @@ This is not a commercial EDA tool, not a signoff flow, and not a replacement for
 - [Analog intuition behind the flow](#analog-intuition-behind-the-flow)
 - [Why hybrid mode exists](#why-hybrid-mode-exists)
 - [Repository layout](#repository-layout)
-- [Files and libraries used](#files-and-libraries-used)
+- [File map](#file-map)
+- [How the device-generation files are used](#how-the-device-generation-files-are-used)
+- [Using the copied helper files safely](#using-the-copied-helper-files-safely)
 - [Expected paths](#expected-paths)
 - [Why I use klayout_gf7](#why-i-use-klayout_gf7)
 - [Setup](#setup)
@@ -28,7 +29,6 @@ This is not a commercial EDA tool, not a signoff flow, and not a replacement for
 - [Troubleshooting](#troubleshooting)
 - [Validation order](#validation-order)
 - [Final note](#final-note)
-
 
 ## Project scope
 
@@ -98,7 +98,6 @@ Analog layout is not only about placing shapes. Matching, symmetry, common-centr
 
 The practical goal is simple: the generated GDS should help me think about the analog layout, not pretend that layout is already complete.
 
-
 ## Why hybrid mode exists
 
 This part matters because it came directly from the problems I hit while testing.
@@ -115,69 +114,163 @@ fixed devices like BJT                    -> fixed GDS import
 
 That is why `hybrid` exists. I do not treat one backend as always better. I use Magic where guard-ring behavior matters and gdsfactory/SKY130 Python helper cells where normal MOS direct generation is enough.
 
-
 ## Repository layout
 
-This is the folder layout I am using for the project folder:
+This is the actual repository layout I am using now:
 
 ```text
-Analogprov12plus_runs/
+AnalogProV12_Spice_to_KLayoutGDS_Generator/
 ├── README.md
+├── analog_py_draw_klayout/
+│   ├── fixed_devices/
+│   │   ├── VPP/
+│   │   ├── bjt/
+│   │   ├── photodiode/
+│   │   └── rf/
+│   ├── __init__.py
+│   ├── bjt.py
+│   ├── cap.py
+│   ├── diode.py
+│   ├── draw_bjt.py
+│   ├── draw_cap.py
+│   ├── draw_diode.py
+│   ├── draw_fet.py
+│   ├── draw_guard_ring.py
+│   ├── draw_rf.py
+│   ├── draw_vpp.py
+│   ├── fet.py
+│   └── globals.py
+├── examples/
+│   └── BGR_sky130_ckt.spice
 ├── required_docs/
-│   ├── AnalogProPlus_v12_User_Guide.docx
-│   └── AnalogProPlus_v12_User_Guide.pdf
+│   ├── AnalogProPlus_v12_Official_User_Guide.docx
+│   ├── AnalogProPlus_v12_Official_User_Guide.pdf
+│   └── README_AnalogProPlus_v12_official.md
 ├── required_scripts/
 │   ├── skyspice2klayout_all_devices_magicgr_analogproplus.py
-│   ├── skyspice2klayout_all_magicgr_analogproplus
-│   └── optional_sky130_helper_draw_files/
-├── skyspice_runs/
-└── BGR_sky130_ckt.spice
+│   └── skyspice2klayout_all_magicgr_analogproplus
+└── skyspice_runs/
 ```
 
-For local use, I install the script and launcher here:
+I use the repository as a reproducible project bundle. The actual terminal install still copies the main script and launcher into these local folders:
 
 ```text
 ~/ASIC_eda/klayout_scripts/
 ~/ASIC_eda/bin/
 ```
 
-The project folder is for keeping the files organized. The `~/ASIC_eda` folders are where I actually run the tool from the terminal.
+The repository contains the project files, example netlist, documentation, and the helper draw files I used while testing. The generated run outputs go into `skyspice_runs/`.
 
+I normally do not treat generated runs as source code. They are useful for testing and screenshots, but they can become large because every run can create GDS, JSON, CSV, HTML, and log files.
 
-## Files and libraries used
+## File map
 
-### Project files
+| Path | What it is | Why I keep it |
+| --- | --- | --- |
+| [`README.md`](README.md) | Main GitHub README. | This is the first file people see, so I keep setup, usage, and troubleshooting here. |
+| [`required_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py`](required_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py) | Main KLayout Python script. | This is the actual SPICE-to-layout helper script. It parses the netlist, detects devices, generates/imports geometry, places devices, and writes reports. |
+| [`required_scripts/skyspice2klayout_all_magicgr_analogproplus`](required_scripts/skyspice2klayout_all_magicgr_analogproplus) | Bash launcher. | This sets up the PDK paths, forces the `~/klayout_gf7` Python environment, handles CLI arguments, and runs KLayout in batch mode. |
+| [`analog_py_draw_klayout/`](analog_py_draw_klayout/) | SKY130 Python draw/helper files used for compatibility and reference. | These files show the helper draw environment I tested against. They are useful if a local PDK install is missing or has incompatible helper files. |
+| [`analog_py_draw_klayout/draw_fet.py`](analog_py_draw_klayout/draw_fet.py) | MOS draw helper. | This is relevant for the `gdsfactory` backend, where normal MOS devices are generated through Python helper geometry. |
+| [`analog_py_draw_klayout/draw_guard_ring.py`](analog_py_draw_klayout/draw_guard_ring.py) | Guard-ring helper reference. | I keep this for reference, but my normal guard-ring flow uses Magic for selected MOS devices because that behaved better during testing. |
+| [`analog_py_draw_klayout/draw_bjt.py`](analog_py_draw_klayout/draw_bjt.py) | BJT helper reference. | Useful for understanding SKY130 BJT helper behavior. |
+| [`analog_py_draw_klayout/draw_cap.py`](analog_py_draw_klayout/draw_cap.py) | Capacitor helper reference. | Useful for capacitor helper generation/reference. |
+| [`analog_py_draw_klayout/draw_diode.py`](analog_py_draw_klayout/draw_diode.py) | Diode helper reference. | Useful for diode helper generation/reference. |
+| [`analog_py_draw_klayout/fixed_devices/`](analog_py_draw_klayout/fixed_devices/) | Fixed-device GDS folders. | Some devices are safer to import as fixed GDS cells instead of regenerating them procedurally. |
+| [`examples/BGR_sky130_ckt.spice`](examples/BGR_sky130_ckt.spice) | Example SPICE netlist. | This is the bandgap-reference style test netlist I used while building and debugging the flow. |
+| [`required_docs/AnalogProPlus_v12_Official_User_Guide.pdf`](required_docs/AnalogProPlus_v12_Official_User_Guide.pdf) | PDF guide. | Offline documentation with setup, commands, modes, and troubleshooting. |
+| [`required_docs/AnalogProPlus_v12_Official_User_Guide.docx`](required_docs/AnalogProPlus_v12_Official_User_Guide.docx) | Editable guide. | Useful if I want to update the documentation later. |
+| [`required_docs/README_AnalogProPlus_v12_official.md`](required_docs/README_AnalogProPlus_v12_official.md) | Documentation copy of the README. | Kept as a versioned documentation copy. |
+| [`skyspice_runs/`](skyspice_runs/) | Generated run-output folder. | Every run creates a timestamped folder here. This is where GDS, reports, dashboards, logs, and rerun files are written. |
 
-| File or folder | Role |
-| --- | --- |
-| `required_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py` | Main Python script loaded by KLayout batch mode. It parses the netlist, generates/imports cells, places devices, and writes reports. |
-| `required_scripts/skyspice2klayout_all_magicgr_analogproplus` | Launcher script. It sets PDK paths, forces the gf7 Python environment, handles CLI flags, and calls KLayout. |
-| `required_scripts/optional_sky130_helper_draw_files/` | Optional backup/helper draw files. I only use these if the local PDK helper files are missing or broken. |
-| `required_docs/` | DOCX and PDF user guide. |
-| `skyspice_runs/` | Generated run folders. This can get large because every run writes GDS, JSON, CSV, logs, and dashboard files. |
+## How the device-generation files are used
 
-### SKY130/Open PDK files used
+This flow is not built around only one layout-generation method. I use a mixed strategy because different SKY130 device types behaved better through different paths.
 
-| PDK file or folder | Why it matters |
-| --- | --- |
-| `/usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells` | Main SKY130 KLayout Python helper cell folder. MOS/cap/res generation helpers usually live here. |
-| `/usr/local/share/pdk/sky130A/libs.tech/klayout/pymacros/cells` | Alternate helper root. Different open_pdks/KLayout installs may place helper code here. |
-| `/usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells/fixed_devices` | Fixed GDS cells for primitives such as BJTs and other fixed-layout devices. |
-| `/usr/local/share/pdk/sky130A/libs.ref` | Fallback search location for library GDS cells, standard-cell-like content, and other referenced layouts. |
-| `/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc` | Magic rcfile used for Magic generation, DRC helper, and extraction helper flows. |
+| Source | Used for | Why I use it |
+| --- | --- | --- |
+| Magic SKY130 generation | Selected guard-ring MOS devices. | During testing, Magic-generated guard-ring MOS devices behaved more reliably than the KLayout Python guard-ring draw path. |
+| SKY130 Python/gdsfactory draw helpers | Normal MOS and other drawable devices. | This is useful for fast direct generation inside the KLayout/Python flow. |
+| Fixed-device GDS import | BJTs and other fixed primitives. | Some SKY130 devices already exist as fixed GDS cells, so importing them is cleaner than regenerating them. |
+| `libs.ref` fallback | Library/reference cells. | If a cell is not generated directly, the script can search available reference GDS libraries. |
+| Reports and debug layers | Net maps, device maps, ratlines, topology hints, and warnings. | These make the run understandable instead of only producing a raw GDS. |
 
-### Python/runtime pieces
+This is also why `hybrid` mode exists.
 
-| Piece | Use in the flow |
-| --- | --- |
-| KLayout `pya` API | Creates cells, reads/writes GDS, inserts labels, creates debug layers, and builds the top layout. |
-| gdsfactory 7.x | Used by the SKY130 Python draw helper path for direct MOS/device generation. |
-| gdstk | Used by gdsfactory and GDS geometry workflows. |
-| PyYAML | Used when constraints or YAML-style configuration files are enabled. |
-| Python standard library | Used for paths, subprocesses, temporary files, JSON/CSV reports, regular expressions, matching, and environment handling. |
+```text
+selected MOS devices needing guard rings -> Magic backend
+normal MOS devices without guard rings    -> gdsfactory / SKY130 Python draw files
+fixed devices like BJT                    -> fixed GDS import
+```
 
-The helper/draw files are the bridge between a SPICE device name and actual generated geometry. I try to use the installed PDK helper files first. I only copy helper files from the repository if the local PDK install is incomplete.
+I do not treat Magic or gdsfactory as universally better. I use each where it made the most practical sense during testing.
 
+### Why I kept `analog_py_draw_klayout/`
+
+The folder [`analog_py_draw_klayout/`](analog_py_draw_klayout/) is included so the helper environment is visible and reproducible. It also helps when comparing behavior between:
+
+```text
+local PDK helper files
+copied helper files in this repository
+Magic-generated guard-ring devices
+fixed-device GDS imports
+```
+
+My normal preference is still to use the installed SKY130 PDK helper files first:
+
+```text
+/usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells
+/usr/local/share/pdk/sky130A/libs.tech/klayout/pymacros/cells
+```
+
+The copied helper files are mainly for reference, debugging, and reproducibility.
+
+## Using the copied helper files safely
+
+The normal source for SKY130 helper files should be the installed PDK:
+
+```text
+/usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells
+/usr/local/share/pdk/sky130A/libs.tech/klayout/pymacros/cells
+```
+
+If those files are missing or broken in a local install, the copied files in [`analog_py_draw_klayout/`](analog_py_draw_klayout/) can be used as a reference or copied into the PDK helper folder.
+
+I do not recommend overwriting a working PDK folder randomly. Back it up first.
+
+```bash
+PDKPATH=/usr/local/share/pdk/sky130A
+
+sudo cp -a "$PDKPATH/libs.tech/klayout/python/cells" \
+  "$PDKPATH/libs.tech/klayout/python/cells.backup_$(date +%Y%m%d_%H%M%S)"
+```
+
+If copying is actually needed:
+
+```bash
+sudo cp -r analog_py_draw_klayout/* \
+  /usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells/
+```
+
+After copying, run the doctor check again:
+
+```bash
+skyspice2klayout_all_magicgr_analogproplus --doctor
+```
+
+Then test the gdsfactory backend first:
+
+```bash
+SKY_UNIT_ARRAY_MODE=plan \
+skyspice2klayout_all_magicgr_analogproplus \
+  --backend gdsfactory \
+  --placement analogpro \
+  --ratlines off \
+  examples/BGR_sky130_ckt.spice \
+  test_gdsfactory_fixed.gds
+```
+
+If the current installed PDK helper files already work, I leave them alone.
 
 ## Expected paths
 
@@ -225,7 +318,6 @@ PDKPATH="${PDKPATH:-$PDK_ROOT/$PDK}"
 
 Change the default path only if your install is not under `/usr/local/share/pdk`.
 
-
 ## Why I use klayout_gf7
 
 The gdsfactory side of this flow is sensitive to the gdsfactory/KFactory API version. I hit errors like:
@@ -252,7 +344,6 @@ The launcher forces KLayout to use this venv instead of accidentally loading pac
 ```
 
 That `.local` fallback caused a lot of confusing behavior, so the launcher blocks user-site packages and forces the gf7 site-packages path.
-
 
 ## Setup
 
@@ -386,7 +477,6 @@ sudo cp -r required_scripts/optional_sky130_helper_draw_files/cells/* \
 
 If the current setup works, I do not touch this.
 
-
 ## Doctor check
 
 Always run this first:
@@ -421,7 +511,6 @@ OK gdsfactory
 | `gdsfactory` | Correct gdsfactory package is importable from gf7. |
 
 If `KLAYOUT_PY_SITE` points to `.local`, fix the launcher before changing Python code.
-
 
 ## Command syntax
 
@@ -539,13 +628,15 @@ Limitations:
 
 I usually test with `plan` first because extraction may see a physical unit array as many parallel MOS devices instead of one large MOS.
 
-
 ## Wizard mode
 
 Run:
 
 ```bash
-skyspice2klayout_all_magicgr_analogproplus   --wizard   BGR_sky130_ckt.spice   test_wizard.gds
+skyspice2klayout_all_magicgr_analogproplus \
+  --wizard \
+  examples/BGR_sky130_ckt.spice \
+  test_wizard.gds
 ```
 
 The wizard asks only the main choices. Everything else stays at the script defaults.
@@ -582,7 +673,6 @@ For the BGR test case, I can type:
 
 or type `y`, then enter `1 2 3 4` at the next prompt.
 
-
 ## Command examples
 
 ### 1. Basic working folder
@@ -595,10 +685,12 @@ ls
 Expected:
 
 ```text
+README.md
+analog_py_draw_klayout
+examples
 required_docs
 required_scripts
 skyspice_runs
-BGR_sky130_ckt.spice
 ```
 
 ### 2. gdsfactory backend test
@@ -611,7 +703,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend gdsfactory \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_gdsfactory_fixed.gds
 ```
 
@@ -637,7 +729,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_hybrid_fixed.gds
 ```
 
@@ -662,7 +754,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend magic \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_magic_selected_only.gds
 ```
 
@@ -683,7 +775,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend magic \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_magic_all_guarded.gds
 ```
 
@@ -697,7 +789,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement schematic \
   --ratlines both \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_schematic_placement.gds
 ```
 
@@ -709,7 +801,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines both \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_ratlines.gds
 ```
 
@@ -738,7 +830,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines both \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_full_visual.gds
 ```
 
@@ -771,7 +863,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_drc_check.gds
 ```
 
@@ -801,7 +893,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines both \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   verify_full.gds
 ```
 
@@ -848,10 +940,9 @@ xdg-open skyspice_runs/*test_full_visual*/index.html
 ```bash
 skyspice2klayout_all_magicgr_analogproplus \
   --wizard \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_wizard.gds
 ```
-
 
 
 ## Generated outputs
@@ -886,7 +977,6 @@ column -s, -t < skyspice_runs/*test_full_visual*/test_full_visual.gds.device_map
 column -s, -t < skyspice_runs/*test_full_visual*/test_full_visual.gds.routing_priority.csv | less -S
 ```
 
-
 ## Troubleshooting
 
 | Problem | Likely reason | What I check first |
@@ -917,7 +1007,6 @@ Bad path:
 KLAYOUT_PY_SITE : /home/<user>/.local/lib/python3.12/site-packages
 ```
 
-
 ## Validation order
 
 Run these in order after a fresh setup or after moving the project to another machine:
@@ -932,7 +1021,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend gdsfactory \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_gdsfactory_fixed.gds
 
 # 3. Test hybrid selected guard rings
@@ -943,7 +1032,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines off \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_hybrid_fixed.gds
 
 # 4. Test schematic placement
@@ -952,7 +1041,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement schematic \
   --ratlines both \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_schematic_placement.gds
 
 # 5. Test ratline files
@@ -961,18 +1050,17 @@ skyspice2klayout_all_magicgr_analogproplus \
   --backend hybrid \
   --placement analogpro \
   --ratlines both \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_ratlines.gds
 
 # 6. Test wizard UI
 skyspice2klayout_all_magicgr_analogproplus \
   --wizard \
-  BGR_sky130_ckt.spice \
+  examples/BGR_sky130_ckt.spice \
   test_wizard.gds
 ```
 
 Once these pass, I consider the local setup usable.
-
 
 ## Final note
 
