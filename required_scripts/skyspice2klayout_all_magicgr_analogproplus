@@ -1,0 +1,200 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT="$HOME/ASIC_eda/klayout_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py"
+
+PDK_ROOT="${PDK_ROOT:-/usr/local/share/pdk}"
+PDK="${PDK:-sky130A}"
+PDKPATH="${PDKPATH:-$PDK_ROOT/$PDK}"
+GF7_PY="$HOME/klayout_gf7/bin/python"
+
+resolve_gf7_site() {
+  if [[ ! -x "$GF7_PY" ]]; then
+    echo "ERROR: expected gdsfactory venv python at: $GF7_PY" >&2
+    echo "Fix/create it with:" >&2
+    echo "  python3 -m venv ~/klayout_gf7" >&2
+    echo "  ~/klayout_gf7/bin/pip install 'gdsfactory==7.*' gdstk shapely" >&2
+    exit 1
+  fi
+  "$GF7_PY" -c 'import site; print(site.getsitepackages()[0])'
+}
+
+# Force the known working gf7 venv. Do NOT preserve ~/.local here.
+KLAYOUT_PY_SITE="$(resolve_gf7_site)"
+
+export PDK_ROOT
+export PDK
+export PDKPATH
+export KLAYOUT_PATH="$PDKPATH/libs.tech/klayout"
+export KLAYOUT_PY_SITE
+export PYTHONNOUSERSITE=1
+# Keep old working SKY130 helper roots and gf7 site available before KLayout starts.
+export PYTHONPATH="$KLAYOUT_PY_SITE:$PDKPATH/libs.tech/klayout/python:$PDKPATH/libs.tech/klayout/pymacros:${PYTHONPATH:-}"
+
+show_help() {
+cat <<'EOHELP'
+skyspice2klayout_all_magicgr_analogproplus
+
+Usage:
+  skyspice2klayout_all_magicgr_analogproplus [options] input.spice output.gds
+  skyspice2klayout_all_magicgr_analogproplus --wizard input.spice output.gds
+  skyspice2klayout_all_magicgr_analogproplus --doctor
+
+Options:
+  --wizard              Ask a short terminal setup wizard before generation
+  --preset NAME         quick | pro | verify | clean
+  --backend NAME        magic | gdsfactory | hybrid
+  --ratlines MODE       off | points | full | both
+  --placement STYLE     analogpro | schematic
+  --flat                Legacy output: put files next to output.gds, no run folder
+  --run-dir DIR         Put all generated files into this exact run folder
+  --run-root DIR        Put run folders under DIR instead of ./skyspice_runs
+  --open                Open output GDS after generation
+  --doctor              Check KLayout/Magic/Netgen/PDK/script paths
+  -h, --help            Show this help
+
+Environment knobs:
+  SKY_GUARD_RING=yes SKY_GR_INSTS=all
+  SKY_MOS_BACKEND=magic|gdsfactory|hybrid
+  SKY_RATLINE_GDS=off|points|full|both
+  SKY_PLACEMENT_STYLE=analogpro|schematic
+  SKY_UNIT_ARRAY_MODE=layout|plan|off
+  SKY_CC_MODE=markers|plan|layout_hint|off
+  SKY_DUMMY_MODE=marker|off
+  SKY_MAGIC_DRC_CHECK=1
+  SKY_LVS_CHECK=1
+  SKY_OUTPUT_MODE=run_dir|flat
+  SKY_CONSTRAINTS=/path/constraints.yaml
+EOHELP
+}
+
+doctor() {
+  echo "========== AnalogProPlus Doctor =========="
+  echo "SCRIPT            : $SCRIPT"
+  [[ -f "$SCRIPT" ]] && echo "OK script exists" || echo "ERROR script missing"
+  echo "KLAYOUT_PATH      : $KLAYOUT_PATH"
+  echo "KLAYOUT_PY_SITE   : $KLAYOUT_PY_SITE"
+  echo "PDKPATH           : $PDKPATH"
+  echo "PYTHONNOUSERSITE  : $PYTHONNOUSERSITE"
+  echo "PYTHONPATH head   : ${PYTHONPATH%%:*}"
+  command -v klayout >/dev/null && echo "OK klayout        : $(command -v klayout)" || echo "ERROR klayout not found"
+  command -v magic >/dev/null && echo "OK magic          : $(command -v magic)" || echo "WARN magic not found"
+  command -v netgen >/dev/null && echo "OK netgen         : $(command -v netgen)" || echo "WARN netgen not found"
+  [[ -d "$PDKPATH" ]] && echo "OK PDKPATH exists" || echo "ERROR PDKPATH missing"
+  [[ -f "$PDKPATH/libs.tech/magic/${PDK}.magicrc" ]] && echo "OK Magic rcfile" || echo "WARN Magic rcfile missing"
+  "$GF7_PY" - <<'PYDOC'
+import sys
+print("GF7 python        :", sys.executable)
+try:
+    import gdsfactory as gf
+    print("OK gdsfactory     :", getattr(gf, "__version__", "unknown"))
+    print("gdsfactory file   :", gf.__file__)
+except Exception as e:
+    print("ERROR gdsfactory  :", e)
+try:
+    import gdstk
+    print("OK gdstk          :", getattr(gdstk, "__version__", "unknown"))
+except Exception as e:
+    print("WARN gdstk        :", e)
+PYDOC
+  echo "=========================================="
+}
+
+POSITIONAL=()
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --wizard)
+      export SKY_WIZARD=1
+      shift
+      ;;
+    --preset)
+      export SKY_PRESET="${2:-pro}"
+      shift 2
+      ;;
+    --preset=*)
+      export SKY_PRESET="${1#*=}"
+      shift
+      ;;
+    --backend)
+      export SKY_MOS_BACKEND="${2:?--backend needs magic|gdsfactory|hybrid}"
+      shift 2
+      ;;
+    --backend=*)
+      export SKY_MOS_BACKEND="${1#*=}"
+      shift
+      ;;
+    --ratlines)
+      export SKY_RATLINE_GDS="${2:?--ratlines needs off|points|full|both}"
+      shift 2
+      ;;
+    --ratlines=*)
+      export SKY_RATLINE_GDS="${1#*=}"
+      shift
+      ;;
+    --placement)
+      export SKY_PLACEMENT_STYLE="${2:?--placement needs analogpro|schematic}"
+      shift 2
+      ;;
+    --placement=*)
+      export SKY_PLACEMENT_STYLE="${1#*=}"
+      shift
+      ;;
+    --flat|--legacy)
+      export SKY_OUTPUT_MODE=flat
+      shift
+      ;;
+    --run-dir)
+      export SKY_RUN_DIR="${2:?--run-dir needs a directory}"
+      shift 2
+      ;;
+    --run-dir=*)
+      export SKY_RUN_DIR="${1#*=}"
+      shift
+      ;;
+    --run-root)
+      export SKY_RUN_ROOT="${2:?--run-root needs a directory}"
+      shift 2
+      ;;
+    --run-root=*)
+      export SKY_RUN_ROOT="${1#*=}"
+      shift
+      ;;
+    --open)
+      export SKY_OPEN_AFTER=1
+      shift
+      ;;
+    --doctor)
+      doctor
+      exit 0
+      ;;
+    -h|--help)
+      show_help
+      exit 0
+      ;;
+    --)
+      shift
+      while [[ $# -gt 0 ]]; do POSITIONAL+=("$1"); shift; done
+      ;;
+    -*)
+      echo "Unknown option: $1" >&2
+      echo "Use --help" >&2
+      exit 2
+      ;;
+    *)
+      POSITIONAL+=("$1")
+      shift
+      ;;
+  esac
+done
+
+if [[ ${#POSITIONAL[@]} -ge 1 ]]; then
+  export SKY_NETLIST="$(realpath "${POSITIONAL[0]}")"
+fi
+
+if [[ ${#POSITIONAL[@]} -ge 2 ]]; then
+  export SKY_OUT="$(realpath -m "${POSITIONAL[1]}")"
+fi
+
+export SKY_RUN_COMMAND="${SKY_RUN_COMMAND:-$0 ${POSITIONAL[*]:-}}"
+
+exec klayout -b -r "$SCRIPT"

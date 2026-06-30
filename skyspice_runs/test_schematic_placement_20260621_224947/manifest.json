@@ -1,0 +1,103 @@
+{
+  "run_dir": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_schematic_placement_20260621_224947",
+  "created_at": "2026-06-21 22:50:04",
+  "version": "all_devices_hybrid_v11_magicgr_analogproplus",
+  "netlist": "/home/kafkayash/Analogprov12plus_runs/BGR_sky130_ckt.spice",
+  "out_gds": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_schematic_placement_20260621_224947/test_schematic_placement.gds",
+  "top": "TOP_AUTOPLACED_FROM_SPICE",
+  "environment": {
+    "KLAYOUT_PY_SITE": "/home/kafkayash/klayout_gf7/lib/python3.12/site-packages",
+    "PDK": "sky130A",
+    "PDKPATH": "/usr/local/share/pdk/sky130A",
+    "PDK_ROOT": "/usr/local/share/pdk",
+    "SKY_MOS_BACKEND": "hybrid",
+    "SKY_NETLIST": "/home/kafkayash/Analogprov12plus_runs/BGR_sky130_ckt.spice",
+    "SKY_OUT": "/home/kafkayash/Analogprov12plus_runs/test_schematic_placement.gds",
+    "SKY_PLACEMENT_STYLE": "schematic",
+    "SKY_RATLINE_GDS": "both",
+    "SKY_RUN_COMMAND": "/home/kafkayash/ASIC_eda/bin/skyspice2klayout_all_magicgr_analogproplus BGR_sky130_ckt.spice test_schematic_placement.gds",
+    "SKY_UNIT_ARRAY_MODE": "plan"
+  },
+  "files": [
+    {
+      "path": "test_schematic_placement.gds",
+      "size_bytes": 298646
+    },
+    {
+      "path": "test_schematic_placement.gds.common_centroid_plan.json",
+      "size_bytes": 1467
+    },
+    {
+      "path": "test_schematic_placement.gds.constraints.normalized.json",
+      "size_bytes": 59
+    },
+    {
+      "path": "test_schematic_placement.gds.device_map.csv",
+      "size_bytes": 7632
+    },
+    {
+      "path": "test_schematic_placement.gds.dummy_plan.json",
+      "size_bytes": 445
+    },
+    {
+      "path": "test_schematic_placement.gds.layout_templates.json",
+      "size_bytes": 746
+    },
+    {
+      "path": "test_schematic_placement.gds.layout_warnings.csv",
+      "size_bytes": 3383
+    },
+    {
+      "path": "test_schematic_placement.gds.layout_warnings.json",
+      "size_bytes": 5732
+    },
+    {
+      "path": "test_schematic_placement.gds.match_groups.json",
+      "size_bytes": 894
+    },
+    {
+      "path": "test_schematic_placement.gds.nets.json",
+      "size_bytes": 28079
+    },
+    {
+      "path": "test_schematic_placement.gds.report.json",
+      "size_bytes": 99468
+    },
+    {
+      "path": "test_schematic_placement.gds.routing_plan.csv",
+      "size_bytes": 3140
+    },
+    {
+      "path": "test_schematic_placement.gds.routing_plan.json",
+      "size_bytes": 7982
+    },
+    {
+      "path": "test_schematic_placement.gds.routing_priority.csv",
+      "size_bytes": 3734
+    },
+    {
+      "path": "test_schematic_placement.gds.routing_recommendations.json",
+      "size_bytes": 8570
+    },
+    {
+      "path": "test_schematic_placement.gds.topology.json",
+      "size_bytes": 24691
+    },
+    {
+      "path": "test_schematic_placement.gds.unit_arrays.csv",
+      "size_bytes": 399
+    },
+    {
+      "path": "test_schematic_placement.gds.unit_arrays.json",
+      "size_bytes": 2341
+    },
+    {
+      "path": "test_schematic_placement_ratlines_full.gds",
+      "size_bytes": 304300
+    },
+    {
+      "path": "test_schematic_placement_ratpoints.gds",
+      "size_bytes": 301654
+    }
+  ]
+}

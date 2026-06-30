@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "mode": "off",
+  "count_each_side": 1,
+  "physical_dummy_warning": "Physical dummy MOS insertion is LVS-risky and disabled by default. Marker dummies are non-fab annotations.",
+  "groups": []
+}

@@ -1,0 +1,1132 @@
+{
+  "topology_analysis": true,
+  "layout_style": "analog",
+  "devices": [
+    {
+      "inst": "X1",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "",
+      "nodes": [
+        "net16",
+        "net16",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "inst": "X2",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": "",
+      "nodes": [
+        "net3",
+        "net03",
+        "net16",
+        "0"
+      ]
+    },
+    {
+      "inst": "X3",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": "",
+      "nodes": [
+        "net2",
+        "net03",
+        "net3",
+        "0"
+      ]
+    },
+    {
+      "inst": "X4",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": "",
+      "nodes": [
+        "net7",
+        "net19",
+        "net3",
+        "0"
+      ]
+    },
+    {
+      "inst": "X5",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "",
+      "nodes": [
+        "net19",
+        "net19",
+        "net7",
+        "0"
+      ]
+    },
+    {
+      "inst": "X6",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": "",
+      "nodes": [
+        "netbc",
+        "net13",
+        "net7",
+        "0"
+      ]
+    },
+    {
+      "inst": "X7",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "",
+      "nodes": [
+        "net13",
+        "net13",
+        "netbc",
+        "0"
+      ]
+    },
+    {
+      "inst": "X8",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "net2",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "X9",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "net03",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "X10",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "net19",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "X11",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "net13",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "X12",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "net9",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "Xa",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "neta",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "Xb",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "",
+      "nodes": [
+        "neta",
+        "neta",
+        "netef",
+        "0"
+      ]
+    },
+    {
+      "inst": "Xc",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": "",
+      "nodes": [
+        "netef",
+        "neta",
+        "netbc",
+        "0"
+      ]
+    },
+    {
+      "inst": "Xd",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "nodes": [
+        "netd",
+        "net2",
+        "vdd",
+        "vdd"
+      ]
+    },
+    {
+      "inst": "Xe",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "",
+      "nodes": [
+        "netd",
+        "netd",
+        "net9",
+        "0"
+      ]
+    },
+    {
+      "inst": "Xf",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": "",
+      "nodes": [
+        "net9",
+        "netd",
+        "netef",
+        "0"
+      ]
+    },
+    {
+      "inst": "XQ0",
+      "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40",
+      "category": "bjt",
+      "topology_class": "bjt_branch",
+      "topology_role": "vertical_bjt_or_bipolar_device",
+      "topology_group": "",
+      "nodes": [
+        "0",
+        "0",
+        "net03",
+        "0"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "TOPO1",
+      "type": "diode_connected_mos",
+      "instances": [
+        "X1",
+        "X5",
+        "X7",
+        "X8",
+        "Xb",
+        "Xe"
+      ],
+      "reason": "MOS drain and gate are tied"
+    },
+    {
+      "id": "MIRR2",
+      "type": "current_mirror",
+      "reference": "X8",
+      "outputs": [
+        "X10",
+        "X11",
+        "X12",
+        "Xa",
+        "Xd",
+        "X9"
+      ],
+      "instances": [
+        "X8",
+        "X10",
+        "X11",
+        "X12",
+        "Xa",
+        "Xd",
+        "X9"
+      ],
+      "gate_net": "net2",
+      "reason": "diode-connected MOS gate drives same-dimension devices with common source/body; includes ratioed-width outputs"
+    },
+    {
+      "id": "STACK3",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X1",
+        "X2"
+      ],
+      "shared_internal_nets": [
+        "net16"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK4",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X2",
+        "X3"
+      ],
+      "shared_internal_nets": [
+        "net3"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK5",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X2",
+        "X4"
+      ],
+      "shared_internal_nets": [
+        "net3"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK6",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X3",
+        "X4"
+      ],
+      "shared_internal_nets": [
+        "net3"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK7",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X4",
+        "X5"
+      ],
+      "shared_internal_nets": [
+        "net7"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK8",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X4",
+        "X6"
+      ],
+      "shared_internal_nets": [
+        "net7"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK9",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X5",
+        "X6"
+      ],
+      "shared_internal_nets": [
+        "net7"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK10",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X6",
+        "X7"
+      ],
+      "shared_internal_nets": [
+        "netbc"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK11",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X6",
+        "Xc"
+      ],
+      "shared_internal_nets": [
+        "netbc"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK12",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "X7",
+        "Xc"
+      ],
+      "shared_internal_nets": [
+        "netbc"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK13",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "Xb",
+        "Xc"
+      ],
+      "shared_internal_nets": [
+        "netef"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK14",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "Xb",
+        "Xf"
+      ],
+      "shared_internal_nets": [
+        "netef"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK15",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "Xc",
+        "Xf"
+      ],
+      "shared_internal_nets": [
+        "netef"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "STACK16",
+      "type": "cascode_or_stack_candidate",
+      "instances": [
+        "Xe",
+        "Xf"
+      ],
+      "shared_internal_nets": [
+        "net9"
+      ],
+      "reason": "same-type MOS devices share an internal source/drain net"
+    },
+    {
+      "id": "BJT17",
+      "type": "bjt_branch",
+      "instances": [
+        "XQ0"
+      ],
+      "reason": "BJT devices should usually be kept close to bias/reference devices in analog layouts"
+    }
+  ],
+  "nets": {
+    "net16": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 3,
+      "roles": [
+        "D",
+        "G",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X1",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X1",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X2",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "0": {
+      "classification": "power",
+      "pin_count": 15,
+      "roles": [
+        "B",
+        "C",
+        "S"
+      ],
+      "categories": [
+        "bjt",
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X1",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X1",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X2",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X3",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X4",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X5",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X6",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X7",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xb",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xc",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xe",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xf",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "XQ0",
+          "role": "C",
+          "category": "bjt",
+          "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+        },
+        {
+          "inst": "XQ0",
+          "role": "B",
+          "category": "bjt",
+          "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+        },
+        {
+          "inst": "XQ0",
+          "role": "S",
+          "category": "bjt",
+          "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+        }
+      ]
+    },
+    "net3": {
+      "classification": "local_signal",
+      "pin_count": 3,
+      "roles": [
+        "D",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X2",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X3",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X4",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "net03": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "roles": [
+        "D",
+        "E",
+        "G"
+      ],
+      "categories": [
+        "bjt",
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X2",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X3",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X9",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "XQ0",
+          "role": "E",
+          "category": "bjt",
+          "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+        }
+      ]
+    },
+    "net2": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 9,
+      "roles": [
+        "D",
+        "G"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X3",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X8",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X8",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X9",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X10",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X11",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X12",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xa",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xd",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        }
+      ]
+    },
+    "net7": {
+      "classification": "local_signal",
+      "pin_count": 3,
+      "roles": [
+        "D",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X4",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X5",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X6",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "net19": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "roles": [
+        "D",
+        "G"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X4",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X5",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X5",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X10",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        }
+      ]
+    },
+    "netbc": {
+      "classification": "local_signal",
+      "pin_count": 3,
+      "roles": [
+        "D",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X6",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X7",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xc",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "net13": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "roles": [
+        "D",
+        "G"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X6",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X7",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X7",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "X11",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        }
+      ]
+    },
+    "vdd": {
+      "classification": "power",
+      "pin_count": 14,
+      "roles": [
+        "B",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X8",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X8",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X9",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X9",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X10",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X10",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X11",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X11",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X12",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "X12",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xa",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xa",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xd",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xd",
+          "role": "B",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        }
+      ]
+    },
+    "net9": {
+      "classification": "local_signal",
+      "pin_count": 3,
+      "roles": [
+        "D",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "X12",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xe",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xf",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "neta": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "roles": [
+        "D",
+        "G"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "Xa",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xb",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xb",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xc",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "netef": {
+      "classification": "local_signal",
+      "pin_count": 3,
+      "roles": [
+        "D",
+        "S"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "Xb",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xc",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xf",
+          "role": "S",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    },
+    "netd": {
+      "classification": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "roles": [
+        "D",
+        "G"
+      ],
+      "categories": [
+        "mos"
+      ],
+      "pins": [
+        {
+          "inst": "Xd",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__pfet_01v8_lvt"
+        },
+        {
+          "inst": "Xe",
+          "role": "D",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xe",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        },
+        {
+          "inst": "Xf",
+          "role": "G",
+          "category": "mos",
+          "cell": "sky130_fd_pr__nfet_01v8_lvt"
+        }
+      ]
+    }
+  }
+}

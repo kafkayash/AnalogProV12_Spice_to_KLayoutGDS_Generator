@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>AnalogProPlus Run</title>
+<style>
+body{font-family:Arial,sans-serif;margin:28px;line-height:1.35;background:#fafafa;color:#202124}
+h1,h2{color:#111} table{border-collapse:collapse;width:100%;background:white;margin:12px 0}
+td,th{border:1px solid #ddd;padding:6px;font-size:13px;vertical-align:top} th{background:#eee}
+.card{background:white;border:1px solid #ddd;padding:12px;margin:12px 0;border-radius:8px}
+code{background:#eee;padding:2px 4px;border-radius:4px}
+</style></head><body>
+<h1>AnalogProPlus Run</h1>
+<div class="card">
+<b>GDS:</b> <code>BGR_sky130_ckt_magic_all.gds</code><br>
+<b>Placed:</b> 19 &nbsp; <b>Missing:</b> 0<br>
+<b>Version:</b> all_devices_hybrid_v11_magicgr_analogproplus_gfproxy<br>
+<b>Magic DRC:</b> False
+</div>
+<h2>Warnings</h2>
+<table><tr><th>Severity</th><th>Inst</th><th>Category</th><th>Message</th></tr><tr><td>medium</td><td>X10</td><td>analog_sensitive_no_guard_ring</td><td>current_mirror device has no selected guard ring.</td></tr>
+<tr><td>medium</td><td>X11</td><td>analog_sensitive_no_guard_ring</td><td>current_mirror device has no selected guard ring.</td></tr>
+<tr><td>medium</td><td>X12</td><td>analog_sensitive_no_guard_ring</td><td>current_mirror device has no selected guard ring.</td></tr>
+<tr><td>medium</td><td>X9</td><td>analog_sensitive_no_guard_ring</td><td>current_mirror device has no selected guard ring.</td></tr>
+<tr><td>medium</td><td>Xa</td><td>analog_sensitive_no_guard_ring</td><td>current_mirror device has no selected guard ring.</td></tr>
+<tr><td>medium</td><td>Xd</td><td>analog_sensitive_no_guard_ring</td><td>current_mirror device has no selected guard ring.</td></tr>
+<tr><td>medium</td><td>X1</td><td>large_single_finger_mos</td><td>Large MOS W=64um with nf=1.</td></tr>
+<tr><td>medium</td><td>X2</td><td>large_single_finger_mos</td><td>Large MOS W=64um with nf=1.</td></tr>
+<tr><td>medium</td><td>X3</td><td>large_single_finger_mos</td><td>Large MOS W=64um with nf=1.</td></tr>
+<tr><td>low</td><td>X5</td><td>source_body_difference</td><td>Source=net7 and body=0 differ in an analog-sensitive topology.</td></tr>
+<tr><td>low</td><td>X7</td><td>source_body_difference</td><td>Source=netbc and body=0 differ in an analog-sensitive topology.</td></tr>
+<tr><td>low</td><td>Xb</td><td>source_body_difference</td><td>Source=netef and body=0 differ in an analog-sensitive topology.</td></tr>
+<tr><td>low</td><td>Xe</td><td>source_body_difference</td><td>Source=net9 and body=0 differ in an analog-sensitive topology.</td></tr>
+<tr><td>info</td><td>XQ0</td><td>bjt_branch</td><td>BJT/fixed primitive detected.</td></tr>
+<tr><td>info</td><td>X1</td><td>diode_connected_mos</td><td>MOS is diode-connected D=G.</td></tr>
+<tr><td>info</td><td>X5</td><td>diode_connected_mos</td><td>MOS is diode-connected D=G.</td></tr>
+<tr><td>info</td><td>X7</td><td>diode_connected_mos</td><td>MOS is diode-connected D=G.</td></tr>
+<tr><td>info</td><td>X8</td><td>diode_connected_mos</td><td>MOS is diode-connected D=G.</td></tr>
+<tr><td>info</td><td>Xb</td><td>diode_connected_mos</td><td>MOS is diode-connected D=G.</td></tr>
+<tr><td>info</td><td>Xe</td><td>diode_connected_mos</td><td>MOS is diode-connected D=G.</td></tr></table>
+<h2>Routing priority</h2>
+<table><tr><th>Net</th><th>Criticality</th><th>Class</th><th>Recommendation</th></tr><tr><td>0</td><td>power</td><td>power</td><td>Use wide metal and short/body-tap-friendly route; keep rail resistance low.</td></tr>
+<tr><td>vdd</td><td>power</td><td>power</td><td>Use wide metal and short/body-tap-friendly route; keep rail resistance low.</td></tr>
+<tr><td>net2</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal.</td></tr>
+<tr><td>net03</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Gate net: avoid unnecessary length; consider shielding if high impedance. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal.</td></tr>
+<tr><td>netd</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails.</td></tr>
+<tr><td>neta</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails.</td></tr>
+<tr><td>net13</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails.</td></tr>
+<tr><td>net19</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails.</td></tr>
+<tr><td>net16</td><td>high</td><td>bias_or_feedback_sensitive</td><td>Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails.</td></tr>
+<tr><td>net3</td><td>normal</td><td>local_signal</td><td>Large estimated HPWL: place related devices closer or route with shielding/upper metal.</td></tr>
+<tr><td>net9</td><td>normal</td><td>local_signal</td><td>Normal local interconnect; route after priority/sensitive nets.</td></tr>
+<tr><td>net7</td><td>normal</td><td>local_signal</td><td>Normal local interconnect; route after priority/sensitive nets.</td></tr>
+<tr><td>netbc</td><td>normal</td><td>local_signal</td><td>Normal local interconnect; route after priority/sensitive nets.</td></tr>
+<tr><td>netef</td><td>normal</td><td>local_signal</td><td>Normal local interconnect; route after priority/sensitive nets.</td></tr></table>
+<h2>Files</h2>
+<table><tr><th>Path</th><th>Size bytes</th></tr><tr><td><a href='BGR_constraints_template.yaml'>BGR_constraints_template.yaml</a></td><td>467</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds'>BGR_sky130_ckt_magic_all.gds</a></td><td>357522</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.common_centroid_plan.json'>BGR_sky130_ckt_magic_all.gds.common_centroid_plan.json</a></td><td>1467</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.constraints.normalized.json'>BGR_sky130_ckt_magic_all.gds.constraints.normalized.json</a></td><td>59</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.device_map.csv'>BGR_sky130_ckt_magic_all.gds.device_map.csv</a></td><td>7632</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.dummy_plan.json'>BGR_sky130_ckt_magic_all.gds.dummy_plan.json</a></td><td>445</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.layout_templates.json'>BGR_sky130_ckt_magic_all.gds.layout_templates.json</a></td><td>746</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.layout_warnings.csv'>BGR_sky130_ckt_magic_all.gds.layout_warnings.csv</a></td><td>3383</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.layout_warnings.json'>BGR_sky130_ckt_magic_all.gds.layout_warnings.json</a></td><td>5732</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.match_groups.json'>BGR_sky130_ckt_magic_all.gds.match_groups.json</a></td><td>894</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.nets.json'>BGR_sky130_ckt_magic_all.gds.nets.json</a></td><td>28105</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.report.json'>BGR_sky130_ckt_magic_all.gds.report.json</a></td><td>128876</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.routing_plan.csv'>BGR_sky130_ckt_magic_all.gds.routing_plan.csv</a></td><td>3143</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.routing_plan.json'>BGR_sky130_ckt_magic_all.gds.routing_plan.json</a></td><td>7985</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.routing_priority.csv'>BGR_sky130_ckt_magic_all.gds.routing_priority.csv</a></td><td>3760</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.routing_recommendations.json'>BGR_sky130_ckt_magic_all.gds.routing_recommendations.json</a></td><td>8596</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.topology.json'>BGR_sky130_ckt_magic_all.gds.topology.json</a></td><td>24691</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.unit_arrays.csv'>BGR_sky130_ckt_magic_all.gds.unit_arrays.csv</a></td><td>399</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all.gds.unit_arrays.json'>BGR_sky130_ckt_magic_all.gds.unit_arrays.json</a></td><td>2341</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all_ratlines_full.gds'>BGR_sky130_ckt_magic_all_ratlines_full.gds</a></td><td>363176</td></tr>
+<tr><td><a href='BGR_sky130_ckt_magic_all_ratpoints.gds'>BGR_sky130_ckt_magic_all_ratpoints.gds</a></td><td>360530</td></tr>
+<tr><td><a href='README_run.md'>README_run.md</a></td><td>1271</td></tr>
+<tr><td><a href='manifest.json'>manifest.json</a></td><td>2979</td></tr>
+<tr><td><a href='rerun.sh'>rerun.sh</a></td><td>266</td></tr></table>
+</body></html>

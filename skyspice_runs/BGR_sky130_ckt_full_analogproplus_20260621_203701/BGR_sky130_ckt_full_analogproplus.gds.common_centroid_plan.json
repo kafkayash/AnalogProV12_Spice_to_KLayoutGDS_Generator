@@ -1,0 +1,63 @@
+{
+  "enabled": true,
+  "mode": "markers",
+  "style": "common_centroid",
+  "groups": [
+    {
+      "id": "MIRR2",
+      "type": "auto_current_mirror_common_centroid",
+      "style": "common_centroid",
+      "source": "auto_topology",
+      "reference": "X8",
+      "instances": [
+        "X8",
+        "X10",
+        "X11",
+        "X12",
+        "Xa",
+        "Xd",
+        "X9"
+      ],
+      "unit_counts": {
+        "X8": 1,
+        "X10": 1,
+        "X11": 1,
+        "X12": 1,
+        "Xa": 1,
+        "Xd": 1,
+        "X9": 15
+      },
+      "pattern": [
+        "DUMMY",
+        "X8",
+        "X10",
+        "X11",
+        "X12",
+        "Xa",
+        "Xd",
+        "X9",
+        "X9",
+        "Xd",
+        "Xa",
+        "X12",
+        "X11",
+        "X10",
+        "X8",
+        "DUMMY"
+      ],
+      "dummy_mode": "marker",
+      "dummy_count_each_side": 1,
+      "guard_strategy": "individual_magic_guard_or_group_boundary",
+      "notes": [
+        "This is a common-centroid/interdigitation placement plan. It uses unit-count abstraction from W/nf/m or unit-array plan.",
+        "Dummy entries are markers by default so they do not alter LVS; set SKY_DUMMY_MODE=physical_lvs_risky only after manual review.",
+        "Group guard rings are represented as planning boundaries; device-level Magic guard rings remain the DRC-safe physical default."
+      ]
+    }
+  ],
+  "constraint_file": {
+    "enabled": false,
+    "source": "",
+    "constraints": {}
+  }
+}

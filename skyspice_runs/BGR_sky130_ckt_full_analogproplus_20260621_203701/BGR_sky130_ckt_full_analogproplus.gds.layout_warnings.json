@@ -1,0 +1,146 @@
+{
+  "layout_warnings": true,
+  "count": 20,
+  "warnings": [
+    {
+      "severity": "medium",
+      "inst": "X10",
+      "category": "analog_sensitive_no_guard_ring",
+      "message": "current_mirror device has no selected guard ring.",
+      "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+    },
+    {
+      "severity": "medium",
+      "inst": "X11",
+      "category": "analog_sensitive_no_guard_ring",
+      "message": "current_mirror device has no selected guard ring.",
+      "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+    },
+    {
+      "severity": "medium",
+      "inst": "X12",
+      "category": "analog_sensitive_no_guard_ring",
+      "message": "current_mirror device has no selected guard ring.",
+      "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+    },
+    {
+      "severity": "medium",
+      "inst": "X9",
+      "category": "analog_sensitive_no_guard_ring",
+      "message": "current_mirror device has no selected guard ring.",
+      "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+    },
+    {
+      "severity": "medium",
+      "inst": "Xa",
+      "category": "analog_sensitive_no_guard_ring",
+      "message": "current_mirror device has no selected guard ring.",
+      "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+    },
+    {
+      "severity": "medium",
+      "inst": "Xd",
+      "category": "analog_sensitive_no_guard_ring",
+      "message": "current_mirror device has no selected guard ring.",
+      "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+    },
+    {
+      "severity": "medium",
+      "inst": "X1",
+      "category": "large_single_finger_mos",
+      "message": "Large MOS W=64um with nf=1.",
+      "recommendation": "Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+    },
+    {
+      "severity": "medium",
+      "inst": "X2",
+      "category": "large_single_finger_mos",
+      "message": "Large MOS W=64um with nf=1.",
+      "recommendation": "Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+    },
+    {
+      "severity": "medium",
+      "inst": "X3",
+      "category": "large_single_finger_mos",
+      "message": "Large MOS W=64um with nf=1.",
+      "recommendation": "Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+    },
+    {
+      "severity": "low",
+      "inst": "X5",
+      "category": "source_body_difference",
+      "message": "Source=net7 and body=0 differ in an analog-sensitive topology.",
+      "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+    },
+    {
+      "severity": "low",
+      "inst": "X7",
+      "category": "source_body_difference",
+      "message": "Source=netbc and body=0 differ in an analog-sensitive topology.",
+      "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+    },
+    {
+      "severity": "low",
+      "inst": "Xb",
+      "category": "source_body_difference",
+      "message": "Source=netef and body=0 differ in an analog-sensitive topology.",
+      "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+    },
+    {
+      "severity": "low",
+      "inst": "Xe",
+      "category": "source_body_difference",
+      "message": "Source=net9 and body=0 differ in an analog-sensitive topology.",
+      "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+    },
+    {
+      "severity": "info",
+      "inst": "XQ0",
+      "category": "bjt_branch",
+      "message": "BJT/fixed primitive detected.",
+      "recommendation": "Keep BJT/reference branch close, avoid thermal gradients, and consider common-centroid/thermal symmetry if multiple BJTs are present."
+    },
+    {
+      "severity": "info",
+      "inst": "X1",
+      "category": "diode_connected_mos",
+      "message": "MOS is diode-connected D=G.",
+      "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+    },
+    {
+      "severity": "info",
+      "inst": "X5",
+      "category": "diode_connected_mos",
+      "message": "MOS is diode-connected D=G.",
+      "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+    },
+    {
+      "severity": "info",
+      "inst": "X7",
+      "category": "diode_connected_mos",
+      "message": "MOS is diode-connected D=G.",
+      "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+    },
+    {
+      "severity": "info",
+      "inst": "X8",
+      "category": "diode_connected_mos",
+      "message": "MOS is diode-connected D=G.",
+      "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+    },
+    {
+      "severity": "info",
+      "inst": "Xb",
+      "category": "diode_connected_mos",
+      "message": "MOS is diode-connected D=G.",
+      "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+    },
+    {
+      "severity": "info",
+      "inst": "Xe",
+      "category": "diode_connected_mos",
+      "message": "MOS is diode-connected D=G.",
+      "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+    }
+  ]
+}

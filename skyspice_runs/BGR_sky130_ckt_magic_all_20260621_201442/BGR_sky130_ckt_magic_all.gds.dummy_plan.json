@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "mode": "marker",
+  "count_each_side": 1,
+  "physical_dummy_warning": "Physical dummy MOS insertion is LVS-risky and disabled by default. Marker dummies are non-fab annotations.",
+  "groups": [
+    {
+      "group": "MIRR2",
+      "instances": [
+        "X8",
+        "X10",
+        "X11",
+        "X12",
+        "Xa",
+        "Xd",
+        "X9"
+      ],
+      "dummy_count_each_side": 1,
+      "mode": "marker"
+    }
+  ]
+}

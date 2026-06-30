@@ -1,0 +1,1086 @@
+{
+  "devices": [
+    {
+      "inst": "X1",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": true,
+      "match_group_id": "MAT2",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 64.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net16,net16,0,0",
+      "raw_spice": "X1 net16 net16 0 0 sky130_fd_pr__nfet_01v8_lvt w={S1*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net16",
+      "net_G": "net16",
+      "net_S": "0",
+      "net_B": "0"
+    },
+    {
+      "inst": "X2",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": true,
+      "match_group_id": "MAT2",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 64.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net3,net03,net16,0",
+      "raw_spice": "X2 net3 net03 net16 0 sky130_fd_pr__nfet_01v8_lvt w={S2*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net3",
+      "net_G": "net03",
+      "net_S": "net16",
+      "net_B": "0"
+    },
+    {
+      "inst": "X3",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": true,
+      "match_group_id": "MAT2",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 64.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net2,net03,net3,0",
+      "raw_spice": "X3 net2 net03 net3 0 sky130_fd_pr__nfet_01v8_lvt w={S3*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net2",
+      "net_G": "net03",
+      "net_S": "net3",
+      "net_B": "0"
+    },
+    {
+      "inst": "X4",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": true,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net7,net19,net3,0",
+      "raw_spice": "X4 net7 net19 net3 0 sky130_fd_pr__nfet_01v8_lvt w={S4*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net7",
+      "net_G": "net19",
+      "net_S": "net3",
+      "net_B": "0"
+    },
+    {
+      "inst": "X5",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": true,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net19,net19,net7,0",
+      "raw_spice": "X5 net19 net19 net7 0 sky130_fd_pr__nfet_01v8_lvt w={S5*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net19",
+      "net_G": "net19",
+      "net_S": "net7",
+      "net_B": "0"
+    },
+    {
+      "inst": "X6",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": true,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "netbc,net13,net7,0",
+      "raw_spice": "X6 netbc net13 net7 0 sky130_fd_pr__nfet_01v8_lvt w={S6*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "netbc",
+      "net_G": "net13",
+      "net_S": "net7",
+      "net_B": "0"
+    },
+    {
+      "inst": "X7",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net13,net13,netbc,0",
+      "raw_spice": "X7 net13 net13 netbc 0 sky130_fd_pr__nfet_01v8_lvt w={S7*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net13",
+      "net_G": "net13",
+      "net_S": "netbc",
+      "net_B": "0"
+    },
+    {
+      "inst": "X8",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net2,net2,vdd,vdd",
+      "raw_spice": "X8 net2 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S8*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net2",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "X9",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "",
+      "match_group_type": "",
+      "w_um": 15.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net03,net2,vdd,vdd",
+      "raw_spice": "X9 net03 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S9*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net03",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "X10",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net19,net2,vdd,vdd",
+      "raw_spice": "X10 net19 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S10*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net19",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "X11",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net13,net2,vdd,vdd",
+      "raw_spice": "X11 net13 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S11*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net13",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "X12",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net9,net2,vdd,vdd",
+      "raw_spice": "X12 net9 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S12*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net9",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "Xa",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "neta,net2,vdd,vdd",
+      "raw_spice": "Xa neta net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S13*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "neta",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "Xb",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "neta,neta,netef,0",
+      "raw_spice": "Xb neta neta netef 0 sky130_fd_pr__nfet_01v8_lvt w={S14*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "neta",
+      "net_G": "neta",
+      "net_S": "netef",
+      "net_B": "0"
+    },
+    {
+      "inst": "Xc",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "netef,neta,netbc,0",
+      "raw_spice": "Xc netef neta netbc 0 sky130_fd_pr__nfet_01v8_lvt w={S15*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "netef",
+      "net_G": "neta",
+      "net_S": "netbc",
+      "net_B": "0"
+    },
+    {
+      "inst": "Xd",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "netd,net2,vdd,vdd",
+      "raw_spice": "Xd netd net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S16*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "netd",
+      "net_G": "net2",
+      "net_S": "vdd",
+      "net_B": "vdd"
+    },
+    {
+      "inst": "Xe",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "netd,netd,net9,0",
+      "raw_spice": "Xe netd netd net9 0 sky130_fd_pr__nfet_01v8_lvt w={S17*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "netd",
+      "net_G": "netd",
+      "net_S": "net9",
+      "net_B": "0"
+    },
+    {
+      "inst": "Xf",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "guard_ring": false,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate",
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "net9,netd,netef,0",
+      "raw_spice": "Xf net9 netd netef 0 sky130_fd_pr__nfet_01v8_lvt w={S18*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "net_D": "net9",
+      "net_G": "netd",
+      "net_S": "netef",
+      "net_B": "0"
+    },
+    {
+      "inst": "XQ0",
+      "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40",
+      "category": "bjt",
+      "method": "static_fixed_gds",
+      "guard_ring": false,
+      "match_group_id": "",
+      "match_group_type": "",
+      "w_um": null,
+      "l_um": null,
+      "nf": 1,
+      "m": 1,
+      "nodes_spice_order": "0,0,net03,0",
+      "raw_spice": "XQ0 0 0 net03 0 sky130_fd_pr__pnp_05v5_W3p40L3p40 M=1",
+      "net_C": "0",
+      "net_B": "0",
+      "net_E": "net03",
+      "net_S": "0"
+    }
+  ],
+  "nets": {
+    "net16": [
+      {
+        "inst": "X1",
+        "role": "D"
+      },
+      {
+        "inst": "X1",
+        "role": "G"
+      },
+      {
+        "inst": "X2",
+        "role": "S"
+      }
+    ],
+    "0": [
+      {
+        "inst": "X1",
+        "role": "S"
+      },
+      {
+        "inst": "X1",
+        "role": "B"
+      },
+      {
+        "inst": "X2",
+        "role": "B"
+      },
+      {
+        "inst": "X3",
+        "role": "B"
+      },
+      {
+        "inst": "X4",
+        "role": "B"
+      },
+      {
+        "inst": "X5",
+        "role": "B"
+      },
+      {
+        "inst": "X6",
+        "role": "B"
+      },
+      {
+        "inst": "X7",
+        "role": "B"
+      },
+      {
+        "inst": "Xb",
+        "role": "B"
+      },
+      {
+        "inst": "Xc",
+        "role": "B"
+      },
+      {
+        "inst": "Xe",
+        "role": "B"
+      },
+      {
+        "inst": "Xf",
+        "role": "B"
+      },
+      {
+        "inst": "XQ0",
+        "role": "C"
+      },
+      {
+        "inst": "XQ0",
+        "role": "B"
+      },
+      {
+        "inst": "XQ0",
+        "role": "S"
+      }
+    ],
+    "net3": [
+      {
+        "inst": "X2",
+        "role": "D"
+      },
+      {
+        "inst": "X3",
+        "role": "S"
+      },
+      {
+        "inst": "X4",
+        "role": "S"
+      }
+    ],
+    "net03": [
+      {
+        "inst": "X2",
+        "role": "G"
+      },
+      {
+        "inst": "X3",
+        "role": "G"
+      },
+      {
+        "inst": "X9",
+        "role": "D"
+      },
+      {
+        "inst": "XQ0",
+        "role": "E"
+      }
+    ],
+    "net2": [
+      {
+        "inst": "X3",
+        "role": "D"
+      },
+      {
+        "inst": "X8",
+        "role": "D"
+      },
+      {
+        "inst": "X8",
+        "role": "G"
+      },
+      {
+        "inst": "X9",
+        "role": "G"
+      },
+      {
+        "inst": "X10",
+        "role": "G"
+      },
+      {
+        "inst": "X11",
+        "role": "G"
+      },
+      {
+        "inst": "X12",
+        "role": "G"
+      },
+      {
+        "inst": "Xa",
+        "role": "G"
+      },
+      {
+        "inst": "Xd",
+        "role": "G"
+      }
+    ],
+    "net7": [
+      {
+        "inst": "X4",
+        "role": "D"
+      },
+      {
+        "inst": "X5",
+        "role": "S"
+      },
+      {
+        "inst": "X6",
+        "role": "S"
+      }
+    ],
+    "net19": [
+      {
+        "inst": "X4",
+        "role": "G"
+      },
+      {
+        "inst": "X5",
+        "role": "D"
+      },
+      {
+        "inst": "X5",
+        "role": "G"
+      },
+      {
+        "inst": "X10",
+        "role": "D"
+      }
+    ],
+    "netbc": [
+      {
+        "inst": "X6",
+        "role": "D"
+      },
+      {
+        "inst": "X7",
+        "role": "S"
+      },
+      {
+        "inst": "Xc",
+        "role": "S"
+      }
+    ],
+    "net13": [
+      {
+        "inst": "X6",
+        "role": "G"
+      },
+      {
+        "inst": "X7",
+        "role": "D"
+      },
+      {
+        "inst": "X7",
+        "role": "G"
+      },
+      {
+        "inst": "X11",
+        "role": "D"
+      }
+    ],
+    "vdd": [
+      {
+        "inst": "X8",
+        "role": "S"
+      },
+      {
+        "inst": "X8",
+        "role": "B"
+      },
+      {
+        "inst": "X9",
+        "role": "S"
+      },
+      {
+        "inst": "X9",
+        "role": "B"
+      },
+      {
+        "inst": "X10",
+        "role": "S"
+      },
+      {
+        "inst": "X10",
+        "role": "B"
+      },
+      {
+        "inst": "X11",
+        "role": "S"
+      },
+      {
+        "inst": "X11",
+        "role": "B"
+      },
+      {
+        "inst": "X12",
+        "role": "S"
+      },
+      {
+        "inst": "X12",
+        "role": "B"
+      },
+      {
+        "inst": "Xa",
+        "role": "S"
+      },
+      {
+        "inst": "Xa",
+        "role": "B"
+      },
+      {
+        "inst": "Xd",
+        "role": "S"
+      },
+      {
+        "inst": "Xd",
+        "role": "B"
+      }
+    ],
+    "net9": [
+      {
+        "inst": "X12",
+        "role": "D"
+      },
+      {
+        "inst": "Xe",
+        "role": "S"
+      },
+      {
+        "inst": "Xf",
+        "role": "D"
+      }
+    ],
+    "neta": [
+      {
+        "inst": "Xa",
+        "role": "D"
+      },
+      {
+        "inst": "Xb",
+        "role": "D"
+      },
+      {
+        "inst": "Xb",
+        "role": "G"
+      },
+      {
+        "inst": "Xc",
+        "role": "G"
+      }
+    ],
+    "netef": [
+      {
+        "inst": "Xb",
+        "role": "S"
+      },
+      {
+        "inst": "Xc",
+        "role": "D"
+      },
+      {
+        "inst": "Xf",
+        "role": "S"
+      }
+    ],
+    "netd": [
+      {
+        "inst": "Xd",
+        "role": "D"
+      },
+      {
+        "inst": "Xe",
+        "role": "D"
+      },
+      {
+        "inst": "Xe",
+        "role": "G"
+      },
+      {
+        "inst": "Xf",
+        "role": "G"
+      }
+    ]
+  },
+  "routing_priority": [
+    {
+      "net": "0",
+      "pin_count": 15,
+      "inst_count": 12,
+      "instances": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "XQ0",
+        "Xb",
+        "Xc",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "B",
+        "C",
+        "S"
+      ],
+      "hpwl_um": 293.0334,
+      "x_span_um": 66.521,
+      "y_span_um": 226.51239999999999,
+      "is_power": true,
+      "guide_layer": [
+        255,
+        11
+      ],
+      "priority_score": 15293.0334,
+      "net_class": "power",
+      "criticality": "power",
+      "recommendation": "Use wide metal and short/body-tap-friendly route; keep rail resistance low."
+    },
+    {
+      "net": "vdd",
+      "pin_count": 14,
+      "inst_count": 7,
+      "instances": [
+        "X10",
+        "X11",
+        "X12",
+        "X8",
+        "X9",
+        "Xa",
+        "Xd"
+      ],
+      "roles": [
+        "B",
+        "S"
+      ],
+      "hpwl_um": 107.11100000000002,
+      "x_span_um": 98.09980000000002,
+      "y_span_um": 9.011200000000002,
+      "is_power": true,
+      "guide_layer": [
+        255,
+        12
+      ],
+      "priority_score": 14107.111,
+      "net_class": "power",
+      "criticality": "power",
+      "recommendation": "Use wide metal and short/body-tap-friendly route; keep rail resistance low."
+    },
+    {
+      "net": "net2",
+      "pin_count": 9,
+      "inst_count": 8,
+      "instances": [
+        "X10",
+        "X11",
+        "X12",
+        "X3",
+        "X8",
+        "X9",
+        "Xa",
+        "Xd"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 177.3578,
+      "x_span_um": 98.09980000000003,
+      "y_span_um": 79.25799999999997,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        15
+      ],
+      "priority_score": 11077.3578,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "net03",
+      "pin_count": 4,
+      "inst_count": 4,
+      "instances": [
+        "X2",
+        "X3",
+        "X9",
+        "XQ0"
+      ],
+      "roles": [
+        "D",
+        "E",
+        "G"
+      ],
+      "hpwl_um": 373.8806,
+      "x_span_um": 96.10020000000002,
+      "y_span_um": 277.7804,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        19
+      ],
+      "priority_score": 5823.8806,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Gate net: avoid unnecessary length; consider shielding if high impedance. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "netd",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "Xd",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 61.6628,
+      "x_span_um": 14.693200000000004,
+      "y_span_um": 46.96959999999999,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        14
+      ],
+      "priority_score": 5711.6628,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "neta",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "Xa",
+        "Xb",
+        "Xc"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 61.30279999999998,
+      "x_span_um": 14.33319999999999,
+      "y_span_um": 46.96959999999999,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        21
+      ],
+      "priority_score": 5711.3027999999995,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net19",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "X10",
+        "X4",
+        "X5"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 49.7158,
+      "x_span_um": 1.7998000000000012,
+      "y_span_um": 47.916,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        16
+      ],
+      "priority_score": 5699.7158,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net13",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "X11",
+        "X6",
+        "X7"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 49.4458,
+      "x_span_um": 2.439799999999998,
+      "y_span_um": 47.006,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        18
+      ],
+      "priority_score": 5699.4457999999995,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net16",
+      "pin_count": 3,
+      "inst_count": 2,
+      "instances": [
+        "X1",
+        "X2"
+      ],
+      "roles": [
+        "D",
+        "G",
+        "S"
+      ],
+      "hpwl_um": 74.156,
+      "x_span_um": 2.166,
+      "y_span_um": 71.99000000000001,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        17
+      ],
+      "priority_score": 4724.156,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net3",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X2",
+        "X3",
+        "X4"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 106.73599999999998,
+      "x_span_um": 19.016000000000002,
+      "y_span_um": 87.71999999999997,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        13
+      ],
+      "priority_score": 3606.736,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "net9",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X12",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 66.9344,
+      "x_span_um": 19.132800000000003,
+      "y_span_um": 47.80159999999999,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        23
+      ],
+      "priority_score": 3316.9344,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    },
+    {
+      "net": "net7",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X4",
+        "X5",
+        "X6"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 29.686000000000007,
+      "x_span_um": 19.016000000000005,
+      "y_span_um": 10.670000000000002,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        20
+      ],
+      "priority_score": 3279.686,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    },
+    {
+      "net": "netbc",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X6",
+        "X7",
+        "Xc"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 28.296400000000006,
+      "x_span_um": 18.136000000000003,
+      "y_span_um": 10.160400000000003,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        21
+      ],
+      "priority_score": 3278.2964,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    },
+    {
+      "net": "netef",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "Xb",
+        "Xc",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 27.016,
+      "x_span_um": 17.256,
+      "y_span_um": 9.759999999999998,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        13
+      ],
+      "priority_score": 3277.016,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    }
+  ]
+}

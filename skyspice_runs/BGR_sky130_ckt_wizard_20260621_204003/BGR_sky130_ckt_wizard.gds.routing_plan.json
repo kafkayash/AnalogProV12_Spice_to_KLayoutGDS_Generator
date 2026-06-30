@@ -1,0 +1,311 @@
+{
+  "enabled": true,
+  "routes": [
+    {
+      "net": "net2",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 9,
+      "hpwl_um": 177.358,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "X10",
+        "X11",
+        "X12",
+        "X3",
+        "X8",
+        "X9",
+        "Xa",
+        "Xd"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "net": "net03",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "hpwl_um": 373.881,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "X2",
+        "X3",
+        "X9",
+        "XQ0"
+      ],
+      "roles": [
+        "D",
+        "E",
+        "G"
+      ]
+    },
+    {
+      "net": "net13",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "hpwl_um": 49.446,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "X11",
+        "X6",
+        "X7"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "net": "net19",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "hpwl_um": 49.716,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "X10",
+        "X4",
+        "X5"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "net": "neta",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "hpwl_um": 61.303,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "Xa",
+        "Xb",
+        "Xc"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "net": "netd",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 4,
+      "hpwl_um": 61.663,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "Xd",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "net": "net16",
+      "priority_order": 1,
+      "criticality": "high",
+      "net_class": "bias_or_feedback_sensitive",
+      "pin_count": 3,
+      "hpwl_um": 74.156,
+      "recommended_layer": "M2 horizontal / M3 vertical preferred, avoid diffusion/poly jogs",
+      "recommended_width": "minimum ok for bias, but keep short; use shielding if long",
+      "shielding": "shield with quiet 0/VSS or VDD if crossing noisy regions",
+      "instances": [
+        "X1",
+        "X2"
+      ],
+      "roles": [
+        "D",
+        "G",
+        "S"
+      ]
+    },
+    {
+      "net": "net3",
+      "priority_order": 4,
+      "criticality": "normal",
+      "net_class": "local_signal",
+      "pin_count": 3,
+      "hpwl_um": 106.736,
+      "recommended_layer": "M1 local, M2 for longer branch routes",
+      "recommended_width": "normal; increase for current-carrying branches",
+      "shielding": "avoid coupling into bias/reference nodes",
+      "instances": [
+        "X2",
+        "X3",
+        "X4"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ]
+    },
+    {
+      "net": "net7",
+      "priority_order": 4,
+      "criticality": "normal",
+      "net_class": "local_signal",
+      "pin_count": 3,
+      "hpwl_um": 29.686,
+      "recommended_layer": "M1 local, M2 for longer branch routes",
+      "recommended_width": "normal; increase for current-carrying branches",
+      "shielding": "avoid coupling into bias/reference nodes",
+      "instances": [
+        "X4",
+        "X5",
+        "X6"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ]
+    },
+    {
+      "net": "net9",
+      "priority_order": 4,
+      "criticality": "normal",
+      "net_class": "local_signal",
+      "pin_count": 3,
+      "hpwl_um": 66.934,
+      "recommended_layer": "M1 local, M2 for longer branch routes",
+      "recommended_width": "normal; increase for current-carrying branches",
+      "shielding": "avoid coupling into bias/reference nodes",
+      "instances": [
+        "X12",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ]
+    },
+    {
+      "net": "netbc",
+      "priority_order": 4,
+      "criticality": "normal",
+      "net_class": "local_signal",
+      "pin_count": 3,
+      "hpwl_um": 28.296,
+      "recommended_layer": "M1 local, M2 for longer branch routes",
+      "recommended_width": "normal; increase for current-carrying branches",
+      "shielding": "avoid coupling into bias/reference nodes",
+      "instances": [
+        "X6",
+        "X7",
+        "Xc"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ]
+    },
+    {
+      "net": "netef",
+      "priority_order": 4,
+      "criticality": "normal",
+      "net_class": "local_signal",
+      "pin_count": 3,
+      "hpwl_um": 27.016,
+      "recommended_layer": "M1 local, M2 for longer branch routes",
+      "recommended_width": "normal; increase for current-carrying branches",
+      "shielding": "avoid coupling into bias/reference nodes",
+      "instances": [
+        "Xb",
+        "Xc",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ]
+    },
+    {
+      "net": "0",
+      "priority_order": 10,
+      "criticality": "power",
+      "net_class": "power",
+      "pin_count": 15,
+      "hpwl_um": 293.033,
+      "recommended_layer": "M1/M2 wide rail or strap",
+      "recommended_width": "wide, EM-aware",
+      "shielding": "not needed; this is the shield/return reference",
+      "instances": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "XQ0",
+        "Xb",
+        "Xc",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "B",
+        "C",
+        "S"
+      ]
+    },
+    {
+      "net": "vdd",
+      "priority_order": 10,
+      "criticality": "power",
+      "net_class": "power",
+      "pin_count": 14,
+      "hpwl_um": 107.111,
+      "recommended_layer": "M1/M2 wide rail or strap",
+      "recommended_width": "wide, EM-aware",
+      "shielding": "not needed; this is the shield/return reference",
+      "instances": [
+        "X10",
+        "X11",
+        "X12",
+        "X8",
+        "X9",
+        "Xa",
+        "Xd"
+      ],
+      "roles": [
+        "B",
+        "S"
+      ]
+    }
+  ],
+  "notes": [
+    "This is a routing plan, not metal autorouting.",
+    "Bias/gate/reference nets are prioritized before local drains/sources.",
+    "Power/body nets should be low resistance and tap-friendly."
+  ]
+}

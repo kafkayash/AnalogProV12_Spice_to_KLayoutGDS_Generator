@@ -1,0 +1,117 @@
+{
+  "run_dir": "/home/kafkayash/Analogproplus_runs/skyspice_runs/BGR_sky130_ckt_full_analogproplus_20260621_203701",
+  "created_at": "2026-06-21 20:37:17",
+  "version": "all_devices_hybrid_v11_magicgr_analogproplus_gfproxy",
+  "netlist": "/home/kafkayash/Analogproplus_runs/BGR_sky130_ckt.spice",
+  "out_gds": "/home/kafkayash/Analogproplus_runs/skyspice_runs/BGR_sky130_ckt_full_analogproplus_20260621_203701/BGR_sky130_ckt_full_analogproplus.gds",
+  "top": "TOP_AUTOPLACED_FROM_SPICE",
+  "environment": {
+    "KLAYOUT_PY_SITE": "/home/kafkayash/klayout_gf7/lib/python3.12/site-packages",
+    "PDK": "sky130A",
+    "PDKPATH": "/usr/local/share/pdk/sky130A",
+    "PDK_ROOT": "/usr/local/share/pdk",
+    "SKY_ANALOG_TEMPLATE": "auto",
+    "SKY_CC_MODE": "markers",
+    "SKY_DUMMY_MODE": "marker",
+    "SKY_GR_INSTS": "1 2 3 4",
+    "SKY_GUARD_RING": "yes",
+    "SKY_MAGIC_DRC_CHECK": "1",
+    "SKY_MOS_BACKEND": "hybrid",
+    "SKY_NETLIST": "/home/kafkayash/Analogproplus_runs/BGR_sky130_ckt.spice",
+    "SKY_OUT": "/home/kafkayash/Analogproplus_runs/BGR_sky130_ckt_full_analogproplus.gds",
+    "SKY_RATLINE_GDS": "both",
+    "SKY_UNIT_ARRAY_MIN_W_UM": "8",
+    "SKY_UNIT_ARRAY_MODE": "layout",
+    "SKY_UNIT_W_UM": "1"
+  },
+  "files": [
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds",
+      "size_bytes": 454672
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.common_centroid_plan.json",
+      "size_bytes": 1470
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.constraints.normalized.json",
+      "size_bytes": 59
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.device_map.csv",
+      "size_bytes": 7677
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.dummy_plan.json",
+      "size_bytes": 445
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.layout_templates.json",
+      "size_bytes": 746
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.layout_warnings.csv",
+      "size_bytes": 3383
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.layout_warnings.json",
+      "size_bytes": 5732
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.match_groups.json",
+      "size_bytes": 894
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.nets.json",
+      "size_bytes": 28666
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.report.json",
+      "size_bytes": 144971
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.routing_plan.csv",
+      "size_bytes": 3149
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.routing_plan.json",
+      "size_bytes": 7991
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.routing_priority.csv",
+      "size_bytes": 4276
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.routing_recommendations.json",
+      "size_bytes": 9112
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.topology.json",
+      "size_bytes": 24691
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.unit_arrays.csv",
+      "size_bytes": 720
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus.gds.unit_arrays.json",
+      "size_bytes": 41702
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus_magic_safe.gds",
+      "size_bytes": 434324
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus_magic_safe.gds.magic_drc.log",
+      "size_bytes": 46323
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus_ratlines_full.gds",
+      "size_bytes": 460326
+    },
+    {
+      "path": "BGR_sky130_ckt_full_analogproplus_ratpoints.gds",
+      "size_bytes": 457680
+    }
+  ]
+}
