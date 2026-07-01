@@ -2,7 +2,7 @@
 
 This branch is the screenshot and terminal-log companion for my AnalogProPlus v12 SKY130 SPICE-to-KLayout GDS generator.
 
-The main branch stays clean with the normal project README, scripts, docs, examples, and licenses. This branch is intentionally more visual. I use it to show what each backend and view actually looks like in KLayout, what the terminal output says, and how the extra reference views such as ratpoints, ratlines, schematic placement, device-net labels, and wizard output behave.
+The main branch stays clean with the normal project README, scripts, docs, examples, and licenses. This branch is intentionally more visual. I use it to show what each backend and view actually looks like in KLayout, what the terminal output says, and how the extra reference views such as ratpoints, ratlines, schematic placement, device-net labels, and wizard output behave. So this is just another part checkout the scrrenshots, or else if you have KLayout installed you can check the GDS files in the skyspice_runs or test it on your own spice netlists.
 
 This is still a hobby/summer project. The screenshots are not meant to claim this is a finished analog layout generator. They are meant to show the intermediate layout views that helped me debug and understand the SPICE-to-GDS flow.
 
