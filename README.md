@@ -2,7 +2,7 @@
 
 A hobby SKY130 SPICE-to-KLayout helper flow for analog layout exploration.
 
-I built this as a summer hobby project, with AI assistance, because I was frustrated with the usual `import spice` experience while playing with SKY130 analog circuits. I wanted a cleaner starting point inside KLayout: parse a SPICE/CDL netlist, generate or import the devices, place them in a useful way, write reports, and give me enough visual context to continue manual layout work.
+I built this as a summer hobby project, with AI assistance, because I was frustrated with the usual `import spice` experience on MAGIC Layout Tool while playing with SKY130 analog circuits. I wanted a cleaner starting point inside KLayout: parse a SPICE/CDL netlist, generate or import the devices, place them in a useful way, write reports, and give me enough visual context to continue manual layout work.
 
 This is not a commercial EDA tool, not a signoff flow, and not a replacement for analog layout skill. I still treat manual review, Magic DRC, extraction, LVS, and foundry rule checks as the real checks. This project is a playground for making SPICE-to-GDS exploration less painful.
 
@@ -103,7 +103,7 @@ The practical goal is simple: the generated GDS should help me think about the a
 
 This part matters because it came directly from the problems I hit while testing.
 
-When I tried using the native SKY130 KLayout Python `draw_fet.py` guard-ring path for all guard-ring devices, I ran into DRC-style problems around guard-ring geometry, tap/well behavior, and device spacing. I did not want generated guard rings if they were going to create new layout problems.
+When I tried using the native SKY130 KLayout Python `draw_fet.py` guard-ring path for all guard-ring devices, I ran into DRC-style problems around guard-ring geometry, tap/well behavior, and device spacing. I did not want generated guard rings if they were going to create new layout problems. I tried to play around with Gaurd ring Generator py file but it was hard to make a workaround the DRC error for n-tap spacing, SO I stuck with a hybrid mode use magic incase you want Gaurd rings and if not then use GDSfactory. Although I did include using only gdsfactory use it with caution, DRC-errors are more prone to occur using that, I have only verified issues with gaurd ring generation so far while others seem to work fine.
 
 Magic already has a SKY130 generation/import-style flow that is closer to what Magic itself expects. So my practical split became:
 
@@ -117,7 +117,7 @@ That is why `hybrid` exists. I do not treat one backend as always better. I use 
 
 ## Repository layout
 
-This is the actual repository layout I am using now:
+This is the actual repository layout I am using now (Roughly):
 
 ```text
 AnalogProV12_Spice_to_KLayoutGDS_Generator/
@@ -317,7 +317,7 @@ PDK="${PDK:-sky130A}"
 PDKPATH="${PDKPATH:-$PDK_ROOT/$PDK}"
 ```
 
-Change the default path only if your install is not under `/usr/local/share/pdk`.
+Change the default path only if your install is not under `/usr/local/share/pdk`. Its pretty simple to do that but make sure to verify your system paths and then change it the source code accordingly, Maybe in the future versions of this hobby project, I will directly try implmenting checking the generic system paths by itself depending on type of install Generic/Volare/Ciel or user inputs to the code but for now you need to manually edit these lines in the code.
 
 ## Why I use klayout_gf7
 
@@ -330,7 +330,7 @@ Component.add_ref() got unexpected keyword argument spacing
 list object has no attribute move
 ```
 
-Those errors came from version/API mismatches between older SKY130 helper scripts and newer gdsfactory/KFactory behavior.
+Those errors came from version/API mismatches between older SKY130 helper scripts and newer gdsfactory/KFactory behavior. So yeah My system already had these draw files that were compatible with gdsfactory version 7, I'm unsure if there have been any changes made to the newer installations of sky130 PDK accounting for GDSfactory verisons variables and package changes. But after messing around with this and reading a bit of GDSfactory documentation found out only version 7 was compatible, so either you do a local installtion of the version or else like me create a virtual environment folder placing the older version in it, the bash script path updation is critical though.
 
 The stable solution I use is a separate virtual environment in my home folder:
 
@@ -944,7 +944,7 @@ skyspice2klayout_all_magicgr_analogproplus \
   examples/BGR_sky130_ckt.spice \
   test_wizard.gds
 ```
-
+This is actually the simplest to use, if you think using the huge terminal commands is tough, use the wizard mode, it essentially creates an interactive terminal window fo you where you can enter the inputs you require as it asks. Simplest and most effective, you do not to need to remember the bulky commands. Note that stuff like common centoid or else dummy devices was just experimental, never fully got it working, but its a good enough starting point if you ever need it.
 
 ## Generated outputs
 
@@ -1065,6 +1065,6 @@ Once these pass, I consider the local setup usable.
 
 ## Final note
 
-This is not meant to replace real analog layout skill. I made it because I wanted a cleaner, more useful SPICE-to-KLayout starting point than the rough native import experience I was fighting with.
+This is not meant to replace real analog layout skill. I made it because I wanted a cleaner, more useful SPICE-to-KLayout starting point than the rough native import spice netlist experience I was fighting with on MAGIC. Although not at all perfect in any sense and a bit complex to even set it up on your system. I hope if you ever get it working, it helps someone out there.
 
 It is a playground project, but it became useful enough that I wanted the setup to be reproducible. If something breaks, I first check the launcher paths, then the gf7 environment, then the PDK helper paths. I do not randomly change the working Python flow unless the path and environment checks are clean.
