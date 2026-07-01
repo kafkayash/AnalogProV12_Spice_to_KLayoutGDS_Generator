@@ -1,0 +1,24 @@
+# AnalogProPlus constraint template
+# Copy this file, edit, and run with: SKY_CONSTRAINTS=/path/to/file.yaml
+
+mirror_groups:
+  - name: PMOS_BIAS_MIRROR
+    reference: X8
+    outputs: [X10, X11, X12, Xa, Xd]
+    style: common_centroid
+    dummies: true
+    guard: individual_magic_guard_or_group_boundary
+
+stacks:
+  - name: NMOS_REF_STACK
+    devices: [X1, X2, X3]
+    orientation: vertical
+
+critical_nets:
+  - net2
+  - net03
+  - net13
+  - net19
+
+guard_rings:
+  - all

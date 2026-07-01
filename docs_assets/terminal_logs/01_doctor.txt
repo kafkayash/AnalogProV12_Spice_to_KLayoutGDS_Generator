@@ -1,0 +1,18 @@
+========== AnalogProPlus Doctor ==========
+SCRIPT            : /home/kafkayash/ASIC_eda/klayout_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py
+OK script exists
+KLAYOUT_PATH      : /usr/local/share/pdk/sky130A/libs.tech/klayout
+KLAYOUT_PY_SITE   : /home/kafkayash/klayout_gf7/lib/python3.12/site-packages
+PDKPATH           : /usr/local/share/pdk/sky130A
+PYTHONNOUSERSITE  : 1
+PYTHONPATH head   : /home/kafkayash/klayout_gf7/lib/python3.12/site-packages
+OK klayout        : /usr/bin/klayout
+OK magic          : /usr/local/bin/magic
+OK netgen         : /usr/local/bin/netgen
+OK PDKPATH exists
+OK Magic rcfile
+GF7 python        : /home/kafkayash/klayout_gf7/bin/python
+OK gdsfactory     : unknown
+gdsfactory file   : /home/kafkayash/klayout_gf7/lib/python3.12/site-packages/gdsfactory/__init__.py
+OK gdstk          : 0.9.62
+==========================================

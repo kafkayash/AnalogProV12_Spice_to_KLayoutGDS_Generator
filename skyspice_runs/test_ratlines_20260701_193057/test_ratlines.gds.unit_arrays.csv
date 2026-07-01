@@ -1,0 +1,5 @@
+inst,cell,kind,original_w_um,unit_w_um,l_um,units,rows,cols,guard_ring,mode,layout_created,wrapper_cell,unit_cell
+X1,sky130_fd_pr__nfet_01v8_lvt,nfet,64.0,1.0,1.0,64,4,16,True,plan,,,
+X2,sky130_fd_pr__nfet_01v8_lvt,nfet,64.0,1.0,1.0,64,4,16,True,plan,,,
+X3,sky130_fd_pr__nfet_01v8_lvt,nfet,64.0,1.0,1.0,64,4,16,True,plan,,,
+X9,sky130_fd_pr__pfet_01v8_lvt,pfet,15.0,1.0,1.0,15,2,8,True,plan,,,

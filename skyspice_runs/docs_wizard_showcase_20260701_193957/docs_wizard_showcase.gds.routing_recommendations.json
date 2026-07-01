@@ -1,0 +1,387 @@
+[
+  {
+    "net": "0",
+    "pin_count": 15,
+    "inst_count": 12,
+    "instances": [
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "XQ0",
+      "Xb",
+      "Xc",
+      "Xe",
+      "Xf"
+    ],
+    "roles": [
+      "B",
+      "C",
+      "S"
+    ],
+    "hpwl_um": 341.02819999999997,
+    "x_span_um": 253.075,
+    "y_span_um": 87.95320000000001,
+    "is_power": true,
+    "guide_layer": [
+      255,
+      11
+    ],
+    "priority_score": 15341.0282,
+    "net_class": "power",
+    "criticality": "power",
+    "recommendation": "Use wide metal and short/body-tap-friendly route; keep rail resistance low."
+  },
+  {
+    "net": "vdd",
+    "pin_count": 14,
+    "inst_count": 7,
+    "instances": [
+      "X10",
+      "X11",
+      "X12",
+      "X8",
+      "X9",
+      "Xa",
+      "Xd"
+    ],
+    "roles": [
+      "B",
+      "S"
+    ],
+    "hpwl_um": 409.86100000000005,
+    "x_span_um": 346.58140000000003,
+    "y_span_um": 63.2796,
+    "is_power": true,
+    "guide_layer": [
+      255,
+      12
+    ],
+    "priority_score": 14409.861,
+    "net_class": "power",
+    "criticality": "power",
+    "recommendation": "Use wide metal and short/body-tap-friendly route; keep rail resistance low."
+  },
+  {
+    "net": "net2",
+    "pin_count": 9,
+    "inst_count": 8,
+    "instances": [
+      "X10",
+      "X11",
+      "X12",
+      "X3",
+      "X8",
+      "X9",
+      "Xa",
+      "Xd"
+    ],
+    "roles": [
+      "D",
+      "G"
+    ],
+    "hpwl_um": 400.8322,
+    "x_span_um": 330.135,
+    "y_span_um": 70.69720000000001,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      15
+    ],
+    "priority_score": 11300.8322,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+  },
+  {
+    "net": "net03",
+    "pin_count": 4,
+    "inst_count": 4,
+    "instances": [
+      "X2",
+      "X3",
+      "X9",
+      "XQ0"
+    ],
+    "roles": [
+      "D",
+      "E",
+      "G"
+    ],
+    "hpwl_um": 391.3912,
+    "x_span_um": 291.7436,
+    "y_span_um": 99.6476,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      19
+    ],
+    "priority_score": 5841.3912,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Gate net: avoid unnecessary length; consider shielding if high impedance. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+  },
+  {
+    "net": "netd",
+    "pin_count": 4,
+    "inst_count": 3,
+    "instances": [
+      "Xd",
+      "Xe",
+      "Xf"
+    ],
+    "roles": [
+      "D",
+      "G"
+    ],
+    "hpwl_um": 64.82280000000002,
+    "x_span_um": 50.373200000000004,
+    "y_span_um": 14.44960000000001,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      14
+    ],
+    "priority_score": 5714.8228,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+  },
+  {
+    "net": "net19",
+    "pin_count": 4,
+    "inst_count": 3,
+    "instances": [
+      "X10",
+      "X4",
+      "X5"
+    ],
+    "roles": [
+      "D",
+      "G"
+    ],
+    "hpwl_um": 56.8342,
+    "x_span_um": 52.4502,
+    "y_span_um": 4.384,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      16
+    ],
+    "priority_score": 5706.834199999999,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+  },
+  {
+    "net": "net13",
+    "pin_count": 4,
+    "inst_count": 3,
+    "instances": [
+      "X11",
+      "X6",
+      "X7"
+    ],
+    "roles": [
+      "D",
+      "G"
+    ],
+    "hpwl_um": 54.0838,
+    "x_span_um": 33.709799999999994,
+    "y_span_um": 20.374000000000002,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      18
+    ],
+    "priority_score": 5704.0838,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+  },
+  {
+    "net": "neta",
+    "pin_count": 4,
+    "inst_count": 3,
+    "instances": [
+      "Xa",
+      "Xb",
+      "Xc"
+    ],
+    "roles": [
+      "D",
+      "G"
+    ],
+    "hpwl_um": 24.230200000000004,
+    "x_span_um": 20.7198,
+    "y_span_um": 3.510400000000004,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      21
+    ],
+    "priority_score": 5674.2302,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+  },
+  {
+    "net": "net16",
+    "pin_count": 3,
+    "inst_count": 2,
+    "instances": [
+      "X1",
+      "X2"
+    ],
+    "roles": [
+      "D",
+      "G",
+      "S"
+    ],
+    "hpwl_um": 187.61599999999999,
+    "x_span_um": 175.552,
+    "y_span_um": 12.063999999999997,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      17
+    ],
+    "priority_score": 5087.616,
+    "net_class": "bias_or_feedback_sensitive",
+    "criticality": "high",
+    "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+  },
+  {
+    "net": "net3",
+    "pin_count": 3,
+    "inst_count": 3,
+    "instances": [
+      "X2",
+      "X3",
+      "X4"
+    ],
+    "roles": [
+      "D",
+      "S"
+    ],
+    "hpwl_um": 343.0432,
+    "x_span_um": 287.668,
+    "y_span_um": 55.3752,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      13
+    ],
+    "priority_score": 3843.0432,
+    "net_class": "local_signal",
+    "criticality": "normal",
+    "recommendation": "Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+  },
+  {
+    "net": "netef",
+    "pin_count": 3,
+    "inst_count": 3,
+    "instances": [
+      "Xb",
+      "Xc",
+      "Xf"
+    ],
+    "roles": [
+      "D",
+      "S"
+    ],
+    "hpwl_um": 45.98400000000001,
+    "x_span_um": 29.224000000000004,
+    "y_span_um": 16.760000000000005,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      13
+    ],
+    "priority_score": 3295.984,
+    "net_class": "local_signal",
+    "criticality": "normal",
+    "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+  },
+  {
+    "net": "netbc",
+    "pin_count": 3,
+    "inst_count": 3,
+    "instances": [
+      "X6",
+      "X7",
+      "Xc"
+    ],
+    "roles": [
+      "D",
+      "S"
+    ],
+    "hpwl_um": 38.24560000000001,
+    "x_span_um": 20.066000000000006,
+    "y_span_um": 18.1796,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      21
+    ],
+    "priority_score": 3288.2456,
+    "net_class": "local_signal",
+    "criticality": "normal",
+    "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+  },
+  {
+    "net": "net7",
+    "pin_count": 3,
+    "inst_count": 3,
+    "instances": [
+      "X4",
+      "X5",
+      "X6"
+    ],
+    "roles": [
+      "D",
+      "S"
+    ],
+    "hpwl_um": 25.546,
+    "x_span_um": 23.866,
+    "y_span_um": 1.6799999999999997,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      20
+    ],
+    "priority_score": 3275.546,
+    "net_class": "local_signal",
+    "criticality": "normal",
+    "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+  },
+  {
+    "net": "net9",
+    "pin_count": 3,
+    "inst_count": 3,
+    "instances": [
+      "X12",
+      "Xe",
+      "Xf"
+    ],
+    "roles": [
+      "D",
+      "S"
+    ],
+    "hpwl_um": 24.128800000000005,
+    "x_span_um": 8.8472,
+    "y_span_um": 15.281600000000005,
+    "is_power": false,
+    "guide_layer": [
+      255,
+      23
+    ],
+    "priority_score": 3274.1288,
+    "net_class": "local_signal",
+    "criticality": "normal",
+    "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "run_dir": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057",
+  "created_at": "2026-07-01 19:31:21",
+  "version": "all_devices_hybrid_v11_magicgr_analogproplus",
+  "netlist": "/home/kafkayash/Analogprov12plus_runs/examples/BGR_sky130_ckt.spice",
+  "out_gds": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds",
+  "top": "TOP_AUTOPLACED_FROM_SPICE",
+  "environment": {
+    "KLAYOUT_PY_SITE": "/home/kafkayash/klayout_gf7/lib/python3.12/site-packages",
+    "PDK": "sky130A",
+    "PDKPATH": "/usr/local/share/pdk/sky130A",
+    "PDK_ROOT": "/usr/local/share/pdk",
+    "SKY_MOS_BACKEND": "hybrid",
+    "SKY_NETLIST": "/home/kafkayash/Analogprov12plus_runs/examples/BGR_sky130_ckt.spice",
+    "SKY_OUT": "/home/kafkayash/Analogprov12plus_runs/test_ratlines.gds",
+    "SKY_PLACEMENT_STYLE": "analogpro",
+    "SKY_RATLINE_GDS": "both",
+    "SKY_RUN_COMMAND": "/home/kafkayash/ASIC_eda/bin/skyspice2klayout_all_magicgr_analogproplus examples/BGR_sky130_ckt.spice test_ratlines.gds",
+    "SKY_UNIT_ARRAY_MODE": "plan"
+  },
+  "files": [
+    {
+      "path": "test_ratlines.gds",
+      "size_bytes": 357562
+    },
+    {
+      "path": "test_ratlines.gds.common_centroid_plan.json",
+      "size_bytes": 1467
+    },
+    {
+      "path": "test_ratlines.gds.constraints.normalized.json",
+      "size_bytes": 59
+    },
+    {
+      "path": "test_ratlines.gds.device_map.csv",
+      "size_bytes": 7619
+    },
+    {
+      "path": "test_ratlines.gds.dummy_plan.json",
+      "size_bytes": 445
+    },
+    {
+      "path": "test_ratlines.gds.layout_templates.json",
+      "size_bytes": 746
+    },
+    {
+      "path": "test_ratlines.gds.layout_warnings.csv",
+      "size_bytes": 2402
+    },
+    {
+      "path": "test_ratlines.gds.layout_warnings.json",
+      "size_bytes": 4049
+    },
+    {
+      "path": "test_ratlines.gds.match_groups.json",
+      "size_bytes": 894
+    },
+    {
+      "path": "test_ratlines.gds.nets.json",
+      "size_bytes": 28092
+    },
+    {
+      "path": "test_ratlines.gds.report.json",
+      "size_bytes": 126840
+    },
+    {
+      "path": "test_ratlines.gds.routing_plan.csv",
+      "size_bytes": 3143
+    },
+    {
+      "path": "test_ratlines.gds.routing_plan.json",
+      "size_bytes": 7985
+    },
+    {
+      "path": "test_ratlines.gds.routing_priority.csv",
+      "size_bytes": 3760
+    },
+    {
+      "path": "test_ratlines.gds.routing_recommendations.json",
+      "size_bytes": 8596
+    },
+    {
+      "path": "test_ratlines.gds.topology.json",
+      "size_bytes": 24691
+    },
+    {
+      "path": "test_ratlines.gds.unit_arrays.csv",
+      "size_bytes": 398
+    },
+    {
+      "path": "test_ratlines.gds.unit_arrays.json",
+      "size_bytes": 2340
+    },
+    {
+      "path": "test_ratlines_ratlines_full.gds",
+      "size_bytes": 363216
+    },
+    {
+      "path": "test_ratlines_ratpoints.gds",
+      "size_bytes": 360570
+    }
+  ]
+}

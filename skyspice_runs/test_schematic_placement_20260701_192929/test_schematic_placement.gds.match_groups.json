@@ -1,0 +1,51 @@
+{
+  "match_groups_enabled": true,
+  "groups": [
+    {
+      "id": "MIR1",
+      "type": "current_mirror_candidate",
+      "instances": [
+        "X8",
+        "X10",
+        "X11",
+        "X12",
+        "Xa",
+        "Xd"
+      ],
+      "reason": "same model/W/L/nf with common S/B/G"
+    },
+    {
+      "id": "MAT2",
+      "type": "matched_dimension_candidate",
+      "instances": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "reason": "same model/W/L/nf"
+    },
+    {
+      "id": "MAT3",
+      "type": "matched_dimension_candidate",
+      "instances": [
+        "X4",
+        "X6",
+        "Xc",
+        "Xf"
+      ],
+      "reason": "same model/W/L/nf"
+    },
+    {
+      "id": "MAT4",
+      "type": "matched_dimension_candidate",
+      "instances": [
+        "X5",
+        "X7",
+        "Xb",
+        "Xe"
+      ],
+      "reason": "same model/W/L/nf"
+    }
+  ],
+  "count": 4
+}

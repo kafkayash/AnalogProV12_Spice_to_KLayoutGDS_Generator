@@ -1,0 +1,88 @@
+{
+  "enabled": true,
+  "mode": "plan",
+  "layout_mode": false,
+  "min_w_um": 8.0,
+  "unit_w_target_um": 1.0,
+  "max_units": 64,
+  "devices_planned": 4,
+  "devices_layout_replaced": 0,
+  "plans": [
+    {
+      "enabled": true,
+      "inst": "X1",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "kind": "nfet",
+      "original_w_um": 64.0,
+      "unit_w_um": 1.0,
+      "l_um": 1.0,
+      "units": 64,
+      "rows": 4,
+      "cols": 16,
+      "nf_each": 1,
+      "guard_ring": true,
+      "mode": "plan",
+      "notes": [
+        "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+        "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+      ]
+    },
+    {
+      "enabled": true,
+      "inst": "X2",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "kind": "nfet",
+      "original_w_um": 64.0,
+      "unit_w_um": 1.0,
+      "l_um": 1.0,
+      "units": 64,
+      "rows": 4,
+      "cols": 16,
+      "nf_each": 1,
+      "guard_ring": true,
+      "mode": "plan",
+      "notes": [
+        "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+        "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+      ]
+    },
+    {
+      "enabled": true,
+      "inst": "X3",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "kind": "nfet",
+      "original_w_um": 64.0,
+      "unit_w_um": 1.0,
+      "l_um": 1.0,
+      "units": 64,
+      "rows": 4,
+      "cols": 16,
+      "nf_each": 1,
+      "guard_ring": true,
+      "mode": "plan",
+      "notes": [
+        "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+        "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+      ]
+    },
+    {
+      "enabled": true,
+      "inst": "X9",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "kind": "pfet",
+      "original_w_um": 15.0,
+      "unit_w_um": 1.0,
+      "l_um": 1.0,
+      "units": 15,
+      "rows": 2,
+      "cols": 8,
+      "nf_each": 1,
+      "guard_ring": true,
+      "mode": "plan",
+      "notes": [
+        "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+        "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5352 @@
+{
+  "version": "all_devices_hybrid_v11_magicgr_analogproplus",
+  "pdk_root": "/usr/local/share/pdk",
+  "pdk": "sky130A",
+  "pdkpath": "/usr/local/share/pdk/sky130A",
+  "klayout_py_site": "/home/kafkayash/klayout_gf7/lib/python3.12/site-packages",
+  "cells_py_root": "/usr/local/share/pdk/sky130A/libs.tech/klayout/python",
+  "fixed_devices_dir": "/usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells/fixed_devices",
+  "libs_ref_dir": "/usr/local/share/pdk/sky130A/libs.ref",
+  "netlist": "/home/kafkayash/Analogprov12plus_runs/examples/BGR_sky130_ckt.spice",
+  "out_gds": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds",
+  "top": "TOP_AUTOPLACED_FROM_SPICE",
+  "metadata": {
+    "subckts": [],
+    "globals": [],
+    "voltage_sources": [
+      {
+        "name": "V1",
+        "positive": "vdd",
+        "negative": "0",
+        "value": "dc={VDD} AC=1"
+      }
+    ],
+    "control_blocks_present": true,
+    "params": {
+      "vdd": 1.8,
+      "l": 1.0,
+      "s9": 15.0,
+      "s8": 1.0,
+      "s3": 64.0,
+      "s2": 64.0,
+      "s1": 64.0,
+      "s10": 1.0,
+      "s5": 4.0,
+      "s4": 1.0,
+      "s11": 1.0,
+      "s7": 4.0,
+      "s6": 1.0,
+      "s13": 1.0,
+      "s14": 4.0,
+      "s15": 1.0,
+      "s16": 1.0,
+      "s17": 4.0,
+      "s18": 1.0,
+      "s12": 1.0
+    }
+  },
+  "wizard": {
+    "wizard": true,
+    "profile": "pro",
+    "mos_backend": "hybrid",
+    "placement_style": "schematic",
+    "ratline_gds": "both",
+    "unit_array_mode": "layout",
+    "cc_mode": "off",
+    "dummy_mode": "marker",
+    "magic_drc": false,
+    "lvs": false
+  },
+  "guard_rings": {
+    "guard_rings_enabled": true,
+    "mode": "ask",
+    "selection": "1 2 3 4 5 6 7",
+    "selected": [
+      "x1",
+      "x2",
+      "x3",
+      "x4",
+      "x5",
+      "x6",
+      "x7"
+    ]
+  },
+  "device_resolution_map": {},
+  "devices_total": 19,
+  "placed_total": 19,
+  "missing_total": 0,
+  "placement_summary": {
+    "mos_total": 18,
+    "paired_mos_pairs": 0,
+    "unmatched_mos": 18,
+    "other_entries": 1,
+    "placement": "schematic_order_large_row",
+    "placement_style": "schematic",
+    "place_mode": "compact",
+    "layout_style": "analog",
+    "x_margin_um": 8.0,
+    "y_margin_um": 10.0,
+    "schematic_large_row": true,
+    "schematic_large_w_um": 8.0,
+    "large_row_instances": [
+      "X1",
+      "X2",
+      "X3",
+      "X9"
+    ],
+    "rows": [
+      {
+        "name": "large_devices",
+        "instances": [
+          "X1",
+          "X2",
+          "X3",
+          "X9"
+        ],
+        "large_row": true
+      },
+      {
+        "name": "schematic_row_1",
+        "instances": [
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X10"
+        ],
+        "large_row": false
+      },
+      {
+        "name": "schematic_row_2",
+        "instances": [
+          "X11",
+          "X12",
+          "Xa",
+          "Xb",
+          "Xc",
+          "Xd"
+        ],
+        "large_row": false
+      },
+      {
+        "name": "schematic_row_3",
+        "instances": [
+          "Xe",
+          "Xf",
+          "XQ0"
+        ],
+        "large_row": false
+      }
+    ],
+    "estimated_width_um": 360.88,
+    "estimated_bottom_y_um": -71.23,
+    "analogpro": {
+      "constraints": {
+        "enabled": false,
+        "source": "",
+        "constraints": {}
+      },
+      "common_centroid_groups": 0,
+      "cc_mode": "off",
+      "template_mode": "auto"
+    }
+  },
+  "rails": {
+    "rails_added": true,
+    "vdd_net": "vdd",
+    "gnd_net": "GND",
+    "x0_um": -10.0,
+    "x1_um": 362.88
+  },
+  "net_guides": {
+    "net_guides": false,
+    "mode": "important",
+    "guide_style": "off",
+    "reason": "top-level static guide lines disabled; using movable local stubs"
+  },
+  "guide_style": "off",
+  "top_guides_enabled": false,
+  "movable_device_wrappers": false,
+  "local_pin_stubs": false,
+  "routing_priority": [
+    {
+      "net": "0",
+      "pin_count": 15,
+      "inst_count": 12,
+      "instances": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "XQ0",
+        "Xb",
+        "Xc",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "B",
+        "C",
+        "S"
+      ],
+      "hpwl_um": 341.02819999999997,
+      "x_span_um": 253.075,
+      "y_span_um": 87.95320000000001,
+      "is_power": true,
+      "guide_layer": [
+        255,
+        11
+      ],
+      "priority_score": 15341.0282,
+      "net_class": "power",
+      "criticality": "power",
+      "recommendation": "Use wide metal and short/body-tap-friendly route; keep rail resistance low."
+    },
+    {
+      "net": "vdd",
+      "pin_count": 14,
+      "inst_count": 7,
+      "instances": [
+        "X10",
+        "X11",
+        "X12",
+        "X8",
+        "X9",
+        "Xa",
+        "Xd"
+      ],
+      "roles": [
+        "B",
+        "S"
+      ],
+      "hpwl_um": 409.86100000000005,
+      "x_span_um": 346.58140000000003,
+      "y_span_um": 63.2796,
+      "is_power": true,
+      "guide_layer": [
+        255,
+        12
+      ],
+      "priority_score": 14409.861,
+      "net_class": "power",
+      "criticality": "power",
+      "recommendation": "Use wide metal and short/body-tap-friendly route; keep rail resistance low."
+    },
+    {
+      "net": "net2",
+      "pin_count": 9,
+      "inst_count": 8,
+      "instances": [
+        "X10",
+        "X11",
+        "X12",
+        "X3",
+        "X8",
+        "X9",
+        "Xa",
+        "Xd"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 400.8322,
+      "x_span_um": 330.135,
+      "y_span_um": 70.69720000000001,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        15
+      ],
+      "priority_score": 11300.8322,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "net03",
+      "pin_count": 4,
+      "inst_count": 4,
+      "instances": [
+        "X2",
+        "X3",
+        "X9",
+        "XQ0"
+      ],
+      "roles": [
+        "D",
+        "E",
+        "G"
+      ],
+      "hpwl_um": 391.3912,
+      "x_span_um": 291.7436,
+      "y_span_um": 99.6476,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        19
+      ],
+      "priority_score": 5841.3912,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Gate net: avoid unnecessary length; consider shielding if high impedance. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "netd",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "Xd",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 64.82280000000002,
+      "x_span_um": 50.373200000000004,
+      "y_span_um": 14.44960000000001,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        14
+      ],
+      "priority_score": 5714.8228,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net19",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "X10",
+        "X4",
+        "X5"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 56.8342,
+      "x_span_um": 52.4502,
+      "y_span_um": 4.384,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        16
+      ],
+      "priority_score": 5706.834199999999,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net13",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "X11",
+        "X6",
+        "X7"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 54.0838,
+      "x_span_um": 33.709799999999994,
+      "y_span_um": 20.374000000000002,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        18
+      ],
+      "priority_score": 5704.0838,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "neta",
+      "pin_count": 4,
+      "inst_count": 3,
+      "instances": [
+        "Xa",
+        "Xb",
+        "Xc"
+      ],
+      "roles": [
+        "D",
+        "G"
+      ],
+      "hpwl_um": 24.230200000000004,
+      "x_span_um": 20.7198,
+      "y_span_um": 3.510400000000004,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        21
+      ],
+      "priority_score": 5674.2302,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails."
+    },
+    {
+      "net": "net16",
+      "pin_count": 3,
+      "inst_count": 2,
+      "instances": [
+        "X1",
+        "X2"
+      ],
+      "roles": [
+        "D",
+        "G",
+        "S"
+      ],
+      "hpwl_um": 187.61599999999999,
+      "x_span_um": 175.552,
+      "y_span_um": 12.063999999999997,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        17
+      ],
+      "priority_score": 5087.616,
+      "net_class": "bias_or_feedback_sensitive",
+      "criticality": "high",
+      "recommendation": "Mirror/bias gate net: keep short, symmetric, and away from noisy switching routes. Sensitive analog node: keep compact, minimize coupling, avoid crossing noisy rails. Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "net3",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X2",
+        "X3",
+        "X4"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 343.0432,
+      "x_span_um": 287.668,
+      "y_span_um": 55.3752,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        13
+      ],
+      "priority_score": 3843.0432,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Large estimated HPWL: place related devices closer or route with shielding/upper metal."
+    },
+    {
+      "net": "netef",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "Xb",
+        "Xc",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 45.98400000000001,
+      "x_span_um": 29.224000000000004,
+      "y_span_um": 16.760000000000005,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        13
+      ],
+      "priority_score": 3295.984,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    },
+    {
+      "net": "netbc",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X6",
+        "X7",
+        "Xc"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 38.24560000000001,
+      "x_span_um": 20.066000000000006,
+      "y_span_um": 18.1796,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        21
+      ],
+      "priority_score": 3288.2456,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    },
+    {
+      "net": "net7",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X4",
+        "X5",
+        "X6"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 25.546,
+      "x_span_um": 23.866,
+      "y_span_um": 1.6799999999999997,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        20
+      ],
+      "priority_score": 3275.546,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    },
+    {
+      "net": "net9",
+      "pin_count": 3,
+      "inst_count": 3,
+      "instances": [
+        "X12",
+        "Xe",
+        "Xf"
+      ],
+      "roles": [
+        "D",
+        "S"
+      ],
+      "hpwl_um": 24.128800000000005,
+      "x_span_um": 8.8472,
+      "y_span_um": 15.281600000000005,
+      "is_power": false,
+      "guide_layer": [
+        255,
+        23
+      ],
+      "priority_score": 3274.1288,
+      "net_class": "local_signal",
+      "criticality": "normal",
+      "recommendation": "Normal local interconnect; route after priority/sensitive nets."
+    }
+  ],
+  "matched_groups": {
+    "match_groups_enabled": true,
+    "groups": [
+      {
+        "id": "MIR1",
+        "type": "current_mirror_candidate",
+        "instances": [
+          "X8",
+          "X10",
+          "X11",
+          "X12",
+          "Xa",
+          "Xd"
+        ],
+        "reason": "same model/W/L/nf with common S/B/G"
+      },
+      {
+        "id": "MAT2",
+        "type": "matched_dimension_candidate",
+        "instances": [
+          "X1",
+          "X2",
+          "X3"
+        ],
+        "reason": "same model/W/L/nf"
+      },
+      {
+        "id": "MAT3",
+        "type": "matched_dimension_candidate",
+        "instances": [
+          "X4",
+          "X6",
+          "Xc",
+          "Xf"
+        ],
+        "reason": "same model/W/L/nf"
+      },
+      {
+        "id": "MAT4",
+        "type": "matched_dimension_candidate",
+        "instances": [
+          "X5",
+          "X7",
+          "Xb",
+          "Xe"
+        ],
+        "reason": "same model/W/L/nf"
+      }
+    ],
+    "count": 4
+  },
+  "topology": {
+    "topology_analysis": true,
+    "layout_style": "analog",
+    "devices": [
+      {
+        "inst": "X1",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "diode_connected_mos",
+        "topology_role": "reference_or_bias_device",
+        "topology_group": "",
+        "nodes": [
+          "net16",
+          "net16",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "inst": "X2",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "cascode_or_stack",
+        "topology_role": "stacked_device",
+        "topology_group": "",
+        "nodes": [
+          "net3",
+          "net03",
+          "net16",
+          "0"
+        ]
+      },
+      {
+        "inst": "X3",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "cascode_or_stack",
+        "topology_role": "stacked_device",
+        "topology_group": "",
+        "nodes": [
+          "net2",
+          "net03",
+          "net3",
+          "0"
+        ]
+      },
+      {
+        "inst": "X4",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "cascode_or_stack",
+        "topology_role": "stacked_device",
+        "topology_group": "",
+        "nodes": [
+          "net7",
+          "net19",
+          "net3",
+          "0"
+        ]
+      },
+      {
+        "inst": "X5",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "diode_connected_mos",
+        "topology_role": "reference_or_bias_device",
+        "topology_group": "",
+        "nodes": [
+          "net19",
+          "net19",
+          "net7",
+          "0"
+        ]
+      },
+      {
+        "inst": "X6",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "cascode_or_stack",
+        "topology_role": "stacked_device",
+        "topology_group": "",
+        "nodes": [
+          "netbc",
+          "net13",
+          "net7",
+          "0"
+        ]
+      },
+      {
+        "inst": "X7",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "diode_connected_mos",
+        "topology_role": "reference_or_bias_device",
+        "topology_group": "",
+        "nodes": [
+          "net13",
+          "net13",
+          "netbc",
+          "0"
+        ]
+      },
+      {
+        "inst": "X8",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "diode_connected_mos",
+        "topology_role": "reference_or_bias_device",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "net2",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "X9",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "current_mirror",
+        "topology_role": "mirror_output",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "net03",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "X10",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "current_mirror",
+        "topology_role": "mirror_output",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "net19",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "X11",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "current_mirror",
+        "topology_role": "mirror_output",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "net13",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "X12",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "current_mirror",
+        "topology_role": "mirror_output",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "net9",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "Xa",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "current_mirror",
+        "topology_role": "mirror_output",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "neta",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "Xb",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "diode_connected_mos",
+        "topology_role": "reference_or_bias_device",
+        "topology_group": "",
+        "nodes": [
+          "neta",
+          "neta",
+          "netef",
+          "0"
+        ]
+      },
+      {
+        "inst": "Xc",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "cascode_or_stack",
+        "topology_role": "stacked_device",
+        "topology_group": "",
+        "nodes": [
+          "netef",
+          "neta",
+          "netbc",
+          "0"
+        ]
+      },
+      {
+        "inst": "Xd",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "current_mirror",
+        "topology_role": "mirror_output",
+        "topology_group": "MIRR2",
+        "nodes": [
+          "netd",
+          "net2",
+          "vdd",
+          "vdd"
+        ]
+      },
+      {
+        "inst": "Xe",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "diode_connected_mos",
+        "topology_role": "reference_or_bias_device",
+        "topology_group": "",
+        "nodes": [
+          "netd",
+          "netd",
+          "net9",
+          "0"
+        ]
+      },
+      {
+        "inst": "Xf",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "category": "mos",
+        "topology_class": "cascode_or_stack",
+        "topology_role": "stacked_device",
+        "topology_group": "",
+        "nodes": [
+          "net9",
+          "netd",
+          "netef",
+          "0"
+        ]
+      },
+      {
+        "inst": "XQ0",
+        "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40",
+        "category": "bjt",
+        "topology_class": "bjt_branch",
+        "topology_role": "vertical_bjt_or_bipolar_device",
+        "topology_group": "",
+        "nodes": [
+          "0",
+          "0",
+          "net03",
+          "0"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "id": "TOPO1",
+        "type": "diode_connected_mos",
+        "instances": [
+          "X1",
+          "X5",
+          "X7",
+          "X8",
+          "Xb",
+          "Xe"
+        ],
+        "reason": "MOS drain and gate are tied"
+      },
+      {
+        "id": "MIRR2",
+        "type": "current_mirror",
+        "reference": "X8",
+        "outputs": [
+          "X10",
+          "X11",
+          "X12",
+          "Xa",
+          "Xd",
+          "X9"
+        ],
+        "instances": [
+          "X8",
+          "X10",
+          "X11",
+          "X12",
+          "Xa",
+          "Xd",
+          "X9"
+        ],
+        "gate_net": "net2",
+        "reason": "diode-connected MOS gate drives same-dimension devices with common source/body; includes ratioed-width outputs"
+      },
+      {
+        "id": "STACK3",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X1",
+          "X2"
+        ],
+        "shared_internal_nets": [
+          "net16"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK4",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X2",
+          "X3"
+        ],
+        "shared_internal_nets": [
+          "net3"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK5",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X2",
+          "X4"
+        ],
+        "shared_internal_nets": [
+          "net3"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK6",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X3",
+          "X4"
+        ],
+        "shared_internal_nets": [
+          "net3"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK7",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X4",
+          "X5"
+        ],
+        "shared_internal_nets": [
+          "net7"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK8",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X4",
+          "X6"
+        ],
+        "shared_internal_nets": [
+          "net7"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK9",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X5",
+          "X6"
+        ],
+        "shared_internal_nets": [
+          "net7"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK10",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X6",
+          "X7"
+        ],
+        "shared_internal_nets": [
+          "netbc"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK11",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X6",
+          "Xc"
+        ],
+        "shared_internal_nets": [
+          "netbc"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK12",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "X7",
+          "Xc"
+        ],
+        "shared_internal_nets": [
+          "netbc"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK13",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "Xb",
+          "Xc"
+        ],
+        "shared_internal_nets": [
+          "netef"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK14",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "Xb",
+          "Xf"
+        ],
+        "shared_internal_nets": [
+          "netef"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK15",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "Xc",
+          "Xf"
+        ],
+        "shared_internal_nets": [
+          "netef"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "STACK16",
+        "type": "cascode_or_stack_candidate",
+        "instances": [
+          "Xe",
+          "Xf"
+        ],
+        "shared_internal_nets": [
+          "net9"
+        ],
+        "reason": "same-type MOS devices share an internal source/drain net"
+      },
+      {
+        "id": "BJT17",
+        "type": "bjt_branch",
+        "instances": [
+          "XQ0"
+        ],
+        "reason": "BJT devices should usually be kept close to bias/reference devices in analog layouts"
+      }
+    ],
+    "nets": {
+      "net16": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 3,
+        "roles": [
+          "D",
+          "G",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X1",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X1",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X2",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "0": {
+        "classification": "power",
+        "pin_count": 15,
+        "roles": [
+          "B",
+          "C",
+          "S"
+        ],
+        "categories": [
+          "bjt",
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X1",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X1",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X2",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X3",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X4",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X5",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X6",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X7",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xb",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xc",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xe",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xf",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "XQ0",
+            "role": "C",
+            "category": "bjt",
+            "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+          },
+          {
+            "inst": "XQ0",
+            "role": "B",
+            "category": "bjt",
+            "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+          },
+          {
+            "inst": "XQ0",
+            "role": "S",
+            "category": "bjt",
+            "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+          }
+        ]
+      },
+      "net3": {
+        "classification": "local_signal",
+        "pin_count": 3,
+        "roles": [
+          "D",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X2",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X3",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X4",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "net03": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 4,
+        "roles": [
+          "D",
+          "E",
+          "G"
+        ],
+        "categories": [
+          "bjt",
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X2",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X3",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X9",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "XQ0",
+            "role": "E",
+            "category": "bjt",
+            "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40"
+          }
+        ]
+      },
+      "net2": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 9,
+        "roles": [
+          "D",
+          "G"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X3",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X8",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X8",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X9",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X10",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X11",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X12",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xa",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xd",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          }
+        ]
+      },
+      "net7": {
+        "classification": "local_signal",
+        "pin_count": 3,
+        "roles": [
+          "D",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X4",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X5",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X6",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "net19": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 4,
+        "roles": [
+          "D",
+          "G"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X4",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X5",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X5",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X10",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          }
+        ]
+      },
+      "netbc": {
+        "classification": "local_signal",
+        "pin_count": 3,
+        "roles": [
+          "D",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X6",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X7",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xc",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "net13": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 4,
+        "roles": [
+          "D",
+          "G"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X6",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X7",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X7",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "X11",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          }
+        ]
+      },
+      "vdd": {
+        "classification": "power",
+        "pin_count": 14,
+        "roles": [
+          "B",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X8",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X8",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X9",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X9",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X10",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X10",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X11",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X11",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X12",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "X12",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xa",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xa",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xd",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xd",
+            "role": "B",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          }
+        ]
+      },
+      "net9": {
+        "classification": "local_signal",
+        "pin_count": 3,
+        "roles": [
+          "D",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "X12",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xe",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xf",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "neta": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 4,
+        "roles": [
+          "D",
+          "G"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "Xa",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xb",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xb",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xc",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "netef": {
+        "classification": "local_signal",
+        "pin_count": 3,
+        "roles": [
+          "D",
+          "S"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "Xb",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xc",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xf",
+            "role": "S",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      },
+      "netd": {
+        "classification": "bias_or_feedback_sensitive",
+        "pin_count": 4,
+        "roles": [
+          "D",
+          "G"
+        ],
+        "categories": [
+          "mos"
+        ],
+        "pins": [
+          {
+            "inst": "Xd",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__pfet_01v8_lvt"
+          },
+          {
+            "inst": "Xe",
+            "role": "D",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xe",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          },
+          {
+            "inst": "Xf",
+            "role": "G",
+            "category": "mos",
+            "cell": "sky130_fd_pr__nfet_01v8_lvt"
+          }
+        ]
+      }
+    }
+  },
+  "layout_warnings": {
+    "layout_warnings": true,
+    "count": 20,
+    "warnings": [
+      {
+        "severity": "medium",
+        "inst": "X10",
+        "category": "analog_sensitive_no_guard_ring",
+        "message": "current_mirror device has no selected guard ring.",
+        "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+      },
+      {
+        "severity": "medium",
+        "inst": "X11",
+        "category": "analog_sensitive_no_guard_ring",
+        "message": "current_mirror device has no selected guard ring.",
+        "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+      },
+      {
+        "severity": "medium",
+        "inst": "X12",
+        "category": "analog_sensitive_no_guard_ring",
+        "message": "current_mirror device has no selected guard ring.",
+        "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+      },
+      {
+        "severity": "medium",
+        "inst": "X9",
+        "category": "analog_sensitive_no_guard_ring",
+        "message": "current_mirror device has no selected guard ring.",
+        "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+      },
+      {
+        "severity": "medium",
+        "inst": "Xa",
+        "category": "analog_sensitive_no_guard_ring",
+        "message": "current_mirror device has no selected guard ring.",
+        "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+      },
+      {
+        "severity": "medium",
+        "inst": "Xd",
+        "category": "analog_sensitive_no_guard_ring",
+        "message": "current_mirror device has no selected guard ring.",
+        "recommendation": "Consider guard ring/taps for substrate-noise sensitive analog devices."
+      },
+      {
+        "severity": "medium",
+        "inst": "X1",
+        "category": "large_single_finger_mos",
+        "message": "Large MOS W=64um with nf=1.",
+        "recommendation": "Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+      },
+      {
+        "severity": "medium",
+        "inst": "X2",
+        "category": "large_single_finger_mos",
+        "message": "Large MOS W=64um with nf=1.",
+        "recommendation": "Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+      },
+      {
+        "severity": "medium",
+        "inst": "X3",
+        "category": "large_single_finger_mos",
+        "message": "Large MOS W=64um with nf=1.",
+        "recommendation": "Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+      },
+      {
+        "severity": "low",
+        "inst": "X5",
+        "category": "source_body_difference",
+        "message": "Source=net7 and body=0 differ in an analog-sensitive topology.",
+        "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+      },
+      {
+        "severity": "low",
+        "inst": "X7",
+        "category": "source_body_difference",
+        "message": "Source=netbc and body=0 differ in an analog-sensitive topology.",
+        "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+      },
+      {
+        "severity": "low",
+        "inst": "Xb",
+        "category": "source_body_difference",
+        "message": "Source=netef and body=0 differ in an analog-sensitive topology.",
+        "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+      },
+      {
+        "severity": "low",
+        "inst": "Xe",
+        "category": "source_body_difference",
+        "message": "Source=net9 and body=0 differ in an analog-sensitive topology.",
+        "recommendation": "Check body effect impact and matching; keep body ties symmetric if intentional."
+      },
+      {
+        "severity": "info",
+        "inst": "XQ0",
+        "category": "bjt_branch",
+        "message": "BJT/fixed primitive detected.",
+        "recommendation": "Keep BJT/reference branch close, avoid thermal gradients, and consider common-centroid/thermal symmetry if multiple BJTs are present."
+      },
+      {
+        "severity": "info",
+        "inst": "X1",
+        "category": "diode_connected_mos",
+        "message": "MOS is diode-connected D=G.",
+        "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+      },
+      {
+        "severity": "info",
+        "inst": "X5",
+        "category": "diode_connected_mos",
+        "message": "MOS is diode-connected D=G.",
+        "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+      },
+      {
+        "severity": "info",
+        "inst": "X7",
+        "category": "diode_connected_mos",
+        "message": "MOS is diode-connected D=G.",
+        "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+      },
+      {
+        "severity": "info",
+        "inst": "X8",
+        "category": "diode_connected_mos",
+        "message": "MOS is diode-connected D=G.",
+        "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+      },
+      {
+        "severity": "info",
+        "inst": "Xb",
+        "category": "diode_connected_mos",
+        "message": "MOS is diode-connected D=G.",
+        "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+      },
+      {
+        "severity": "info",
+        "inst": "Xe",
+        "category": "diode_connected_mos",
+        "message": "MOS is diode-connected D=G.",
+        "recommendation": "Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly."
+      }
+    ]
+  },
+  "analogsense": {
+    "enabled": true,
+    "layout_style": "analog"
+  },
+  "unit_arrays": {
+    "enabled": true,
+    "mode": "layout",
+    "layout_mode": true,
+    "min_w_um": 8.0,
+    "unit_w_target_um": 1.0,
+    "max_units": 64,
+    "devices_planned": 4,
+    "devices_layout_replaced": 4,
+    "plans": [
+      {
+        "enabled": true,
+        "inst": "X1",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "kind": "nfet",
+        "original_w_um": 64.0,
+        "unit_w_um": 1.0,
+        "l_um": 1.0,
+        "units": 64,
+        "rows": 4,
+        "cols": 16,
+        "nf_each": 1,
+        "guard_ring": true,
+        "mode": "layout",
+        "notes": [
+          "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+          "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+        ],
+        "layout_created": true,
+        "wrapper_cell": "UNITARR_X1_64x_W1p000_L1p000",
+        "unit_cell": "MAGIC_GR_X1_UNIT_sky130_fd_pr__nfet_01v8_lvt",
+        "unit_method": "direct_draw_mos",
+        "unit_detail": {
+          "backend": "magic_guard_ring_mos",
+          "magic_bin": "magic",
+          "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+          "workdir": null,
+          "tcl": null,
+          "gds_path": null,
+          "params_used": [
+            "w",
+            "1",
+            "l",
+            "1",
+            "nf",
+            "1",
+            "m",
+            "1",
+            "ad",
+            "int((nf+1)/2",
+            "as",
+            "int((nf+2)/2",
+            "pd",
+            "2*int((nf+1)/2",
+            "ps",
+            "2*int((nf+2)/2",
+            "nrd",
+            "0.29",
+            "nrs",
+            "0.29",
+            "sa",
+            "0",
+            "sb",
+            "0",
+            "sd",
+            "0",
+            "mult",
+            "1"
+          ],
+          "stdout_tail": [
+            "    ubm ",
+            "Scaled tech values by 2 / 1 to match internal grid scaling",
+            "Loading sky130A Device Generator Menu ...",
+            "Loading \"/tmp/sky130_magic_gr_X1_UNIT_9rczacje/make_guard_ring_mos.tcl\" from command line.",
+            "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+            "Root cell box:",
+            "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+            "",
+            "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+            "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+            "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+            "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X1_UNIT -spice {w} {1} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+            "Diagnostic: Device bounding box e -0.789999982342124 -0.9399999789893627 0.789999982342124 0.9399999789893627 (um)",
+            "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN.",
+            "Writing 'sky130_fd_pr__nfet_01v8_lvt_SRSYDN'",
+            "Writing 'MAGIC_GR_X1_UNIT_sky130_fd_pr__nfet_01v8_lvt'",
+            "Writing '(UNNAMED)'",
+            "Must specify name for cell (UNNAMED).",
+            "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN",
+            "   Generating output for cell MAGIC_GR_X1_UNIT_sky130_fd_pr__nfet_01v8_lvt"
+          ],
+          "stderr_tail": [
+            "Cell MAGIC_GR_X1_UNIT_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+            "No such file or directory",
+            "Can't write file named '(UNNAMED)'"
+          ],
+          "returncode": 0,
+          "wrap": {
+            "m_handling": "single",
+            "m": 1
+          },
+          "top_cell": "MAGIC_GR_X1_UNIT_sky130_fd_pr__nfet_01v8_lvt"
+        },
+        "unit_bbox_um": {
+          "w_um": 2.85,
+          "h_um": 2.99
+        },
+        "unit_positions": [
+          {
+            "unit_index": 1,
+            "row": 1,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 2,
+            "row": 1,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 3,
+            "row": 1,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 4,
+            "row": 1,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 5,
+            "row": 1,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 6,
+            "row": 1,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 7,
+            "row": 1,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 8,
+            "row": 1,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 9,
+            "row": 1,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 10,
+            "row": 1,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 11,
+            "row": 1,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 12,
+            "row": 1,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 13,
+            "row": 1,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 14,
+            "row": 1,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 15,
+            "row": 1,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 16,
+            "row": 1,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 17,
+            "row": 2,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 18,
+            "row": 2,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 19,
+            "row": 2,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 20,
+            "row": 2,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 21,
+            "row": 2,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 22,
+            "row": 2,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 23,
+            "row": 2,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 24,
+            "row": 2,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 25,
+            "row": 2,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 26,
+            "row": 2,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 27,
+            "row": 2,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 28,
+            "row": 2,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 29,
+            "row": 2,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 30,
+            "row": 2,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 31,
+            "row": 2,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 32,
+            "row": 2,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 33,
+            "row": 3,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 34,
+            "row": 3,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 35,
+            "row": 3,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 36,
+            "row": 3,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 37,
+            "row": 3,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 38,
+            "row": 3,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 39,
+            "row": 3,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 40,
+            "row": 3,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 41,
+            "row": 3,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 42,
+            "row": 3,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 43,
+            "row": 3,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 44,
+            "row": 3,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 45,
+            "row": 3,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 46,
+            "row": 3,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 47,
+            "row": 3,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 48,
+            "row": 3,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 49,
+            "row": 4,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 50,
+            "row": 4,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 51,
+            "row": 4,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 52,
+            "row": 4,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 53,
+            "row": 4,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 54,
+            "row": 4,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 55,
+            "row": 4,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 56,
+            "row": 4,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 57,
+            "row": 4,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 58,
+            "row": 4,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 59,
+            "row": 4,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 60,
+            "row": 4,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 61,
+            "row": 4,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 62,
+            "row": 4,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 63,
+            "row": 4,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 64,
+            "row": 4,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 23.97
+          }
+        ],
+        "dummy_markers_non_fab": true
+      },
+      {
+        "enabled": true,
+        "inst": "X2",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "kind": "nfet",
+        "original_w_um": 64.0,
+        "unit_w_um": 1.0,
+        "l_um": 1.0,
+        "units": 64,
+        "rows": 4,
+        "cols": 16,
+        "nf_each": 1,
+        "guard_ring": true,
+        "mode": "layout",
+        "notes": [
+          "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+          "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+        ],
+        "layout_created": true,
+        "wrapper_cell": "UNITARR_X2_64x_W1p000_L1p000",
+        "unit_cell": "MAGIC_GR_X2_UNIT_sky130_fd_pr__nfet_01v8_lvt",
+        "unit_method": "direct_draw_mos",
+        "unit_detail": {
+          "backend": "magic_guard_ring_mos",
+          "magic_bin": "magic",
+          "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+          "workdir": null,
+          "tcl": null,
+          "gds_path": null,
+          "params_used": [
+            "w",
+            "1",
+            "l",
+            "1",
+            "nf",
+            "1",
+            "m",
+            "1",
+            "ad",
+            "int((nf+1)/2",
+            "as",
+            "int((nf+2)/2",
+            "pd",
+            "2*int((nf+1)/2",
+            "ps",
+            "2*int((nf+2)/2",
+            "nrd",
+            "0.29",
+            "nrs",
+            "0.29",
+            "sa",
+            "0",
+            "sb",
+            "0",
+            "sd",
+            "0",
+            "mult",
+            "1"
+          ],
+          "stdout_tail": [
+            "    ubm ",
+            "Scaled tech values by 2 / 1 to match internal grid scaling",
+            "Loading sky130A Device Generator Menu ...",
+            "Loading \"/tmp/sky130_magic_gr_X2_UNIT__jx62x64/make_guard_ring_mos.tcl\" from command line.",
+            "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+            "Root cell box:",
+            "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+            "",
+            "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+            "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+            "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+            "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X2_UNIT -spice {w} {1} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+            "Diagnostic: Device bounding box e -0.789999982342124 -0.9399999789893627 0.789999982342124 0.9399999789893627 (um)",
+            "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN.",
+            "Writing 'sky130_fd_pr__nfet_01v8_lvt_SRSYDN'",
+            "Writing 'MAGIC_GR_X2_UNIT_sky130_fd_pr__nfet_01v8_lvt'",
+            "Writing '(UNNAMED)'",
+            "Must specify name for cell (UNNAMED).",
+            "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN",
+            "   Generating output for cell MAGIC_GR_X2_UNIT_sky130_fd_pr__nfet_01v8_lvt"
+          ],
+          "stderr_tail": [
+            "Cell MAGIC_GR_X2_UNIT_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+            "No such file or directory",
+            "Can't write file named '(UNNAMED)'"
+          ],
+          "returncode": 0,
+          "wrap": {
+            "m_handling": "single",
+            "m": 1
+          },
+          "top_cell": "MAGIC_GR_X2_UNIT_sky130_fd_pr__nfet_01v8_lvt"
+        },
+        "unit_bbox_um": {
+          "w_um": 2.85,
+          "h_um": 2.99
+        },
+        "unit_positions": [
+          {
+            "unit_index": 1,
+            "row": 1,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 2,
+            "row": 1,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 3,
+            "row": 1,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 4,
+            "row": 1,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 5,
+            "row": 1,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 6,
+            "row": 1,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 7,
+            "row": 1,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 8,
+            "row": 1,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 9,
+            "row": 1,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 10,
+            "row": 1,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 11,
+            "row": 1,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 12,
+            "row": 1,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 13,
+            "row": 1,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 14,
+            "row": 1,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 15,
+            "row": 1,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 16,
+            "row": 1,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 17,
+            "row": 2,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 18,
+            "row": 2,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 19,
+            "row": 2,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 20,
+            "row": 2,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 21,
+            "row": 2,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 22,
+            "row": 2,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 23,
+            "row": 2,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 24,
+            "row": 2,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 25,
+            "row": 2,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 26,
+            "row": 2,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 27,
+            "row": 2,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 28,
+            "row": 2,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 29,
+            "row": 2,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 30,
+            "row": 2,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 31,
+            "row": 2,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 32,
+            "row": 2,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 33,
+            "row": 3,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 34,
+            "row": 3,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 35,
+            "row": 3,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 36,
+            "row": 3,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 37,
+            "row": 3,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 38,
+            "row": 3,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 39,
+            "row": 3,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 40,
+            "row": 3,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 41,
+            "row": 3,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 42,
+            "row": 3,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 43,
+            "row": 3,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 44,
+            "row": 3,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 45,
+            "row": 3,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 46,
+            "row": 3,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 47,
+            "row": 3,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 48,
+            "row": 3,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 49,
+            "row": 4,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 50,
+            "row": 4,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 51,
+            "row": 4,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 52,
+            "row": 4,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 53,
+            "row": 4,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 54,
+            "row": 4,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 55,
+            "row": 4,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 56,
+            "row": 4,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 57,
+            "row": 4,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 58,
+            "row": 4,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 59,
+            "row": 4,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 60,
+            "row": 4,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 61,
+            "row": 4,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 62,
+            "row": 4,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 63,
+            "row": 4,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 64,
+            "row": 4,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 23.97
+          }
+        ],
+        "dummy_markers_non_fab": true
+      },
+      {
+        "enabled": true,
+        "inst": "X3",
+        "cell": "sky130_fd_pr__nfet_01v8_lvt",
+        "kind": "nfet",
+        "original_w_um": 64.0,
+        "unit_w_um": 1.0,
+        "l_um": 1.0,
+        "units": 64,
+        "rows": 4,
+        "cols": 16,
+        "nf_each": 1,
+        "guard_ring": true,
+        "mode": "layout",
+        "notes": [
+          "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+          "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+        ],
+        "layout_created": true,
+        "wrapper_cell": "UNITARR_X3_64x_W1p000_L1p000",
+        "unit_cell": "MAGIC_GR_X3_UNIT_sky130_fd_pr__nfet_01v8_lvt",
+        "unit_method": "direct_draw_mos",
+        "unit_detail": {
+          "backend": "magic_guard_ring_mos",
+          "magic_bin": "magic",
+          "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+          "workdir": null,
+          "tcl": null,
+          "gds_path": null,
+          "params_used": [
+            "w",
+            "1",
+            "l",
+            "1",
+            "nf",
+            "1",
+            "m",
+            "1",
+            "ad",
+            "int((nf+1)/2",
+            "as",
+            "int((nf+2)/2",
+            "pd",
+            "2*int((nf+1)/2",
+            "ps",
+            "2*int((nf+2)/2",
+            "nrd",
+            "0.29",
+            "nrs",
+            "0.29",
+            "sa",
+            "0",
+            "sb",
+            "0",
+            "sd",
+            "0",
+            "mult",
+            "1"
+          ],
+          "stdout_tail": [
+            "    ubm ",
+            "Scaled tech values by 2 / 1 to match internal grid scaling",
+            "Loading sky130A Device Generator Menu ...",
+            "Loading \"/tmp/sky130_magic_gr_X3_UNIT_lwat0lsm/make_guard_ring_mos.tcl\" from command line.",
+            "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+            "Root cell box:",
+            "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+            "",
+            "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+            "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+            "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+            "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X3_UNIT -spice {w} {1} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+            "Diagnostic: Device bounding box e -0.789999982342124 -0.9399999789893627 0.789999982342124 0.9399999789893627 (um)",
+            "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN.",
+            "Writing 'sky130_fd_pr__nfet_01v8_lvt_SRSYDN'",
+            "Writing 'MAGIC_GR_X3_UNIT_sky130_fd_pr__nfet_01v8_lvt'",
+            "Writing '(UNNAMED)'",
+            "Must specify name for cell (UNNAMED).",
+            "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN",
+            "   Generating output for cell MAGIC_GR_X3_UNIT_sky130_fd_pr__nfet_01v8_lvt"
+          ],
+          "stderr_tail": [
+            "Cell MAGIC_GR_X3_UNIT_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+            "No such file or directory",
+            "Can't write file named '(UNNAMED)'"
+          ],
+          "returncode": 0,
+          "wrap": {
+            "m_handling": "single",
+            "m": 1
+          },
+          "top_cell": "MAGIC_GR_X3_UNIT_sky130_fd_pr__nfet_01v8_lvt"
+        },
+        "unit_bbox_um": {
+          "w_um": 2.85,
+          "h_um": 2.99
+        },
+        "unit_positions": [
+          {
+            "unit_index": 1,
+            "row": 1,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 2,
+            "row": 1,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 3,
+            "row": 1,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 4,
+            "row": 1,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 5,
+            "row": 1,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 6,
+            "row": 1,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 7,
+            "row": 1,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 8,
+            "row": 1,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 9,
+            "row": 1,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 10,
+            "row": 1,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 11,
+            "row": 1,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 12,
+            "row": 1,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 13,
+            "row": 1,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 14,
+            "row": 1,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 15,
+            "row": 1,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 16,
+            "row": 1,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 17,
+            "row": 2,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 18,
+            "row": 2,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 19,
+            "row": 2,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 20,
+            "row": 2,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 21,
+            "row": 2,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 22,
+            "row": 2,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 23,
+            "row": 2,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 24,
+            "row": 2,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 25,
+            "row": 2,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 26,
+            "row": 2,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 27,
+            "row": 2,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 28,
+            "row": 2,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 29,
+            "row": 2,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 30,
+            "row": 2,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 31,
+            "row": 2,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 32,
+            "row": 2,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 7.99
+          },
+          {
+            "unit_index": 33,
+            "row": 3,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 34,
+            "row": 3,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 35,
+            "row": 3,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 36,
+            "row": 3,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 37,
+            "row": 3,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 38,
+            "row": 3,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 39,
+            "row": 3,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 40,
+            "row": 3,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 41,
+            "row": 3,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 42,
+            "row": 3,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 43,
+            "row": 3,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 44,
+            "row": 3,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 45,
+            "row": 3,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 46,
+            "row": 3,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 47,
+            "row": 3,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 48,
+            "row": 3,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 15.98
+          },
+          {
+            "unit_index": 49,
+            "row": 4,
+            "col": 16,
+            "x_um": 87.75,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 50,
+            "row": 4,
+            "col": 15,
+            "x_um": 81.89999999999999,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 51,
+            "row": 4,
+            "col": 14,
+            "x_um": 76.05,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 52,
+            "row": 4,
+            "col": 13,
+            "x_um": 70.19999999999999,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 53,
+            "row": 4,
+            "col": 12,
+            "x_um": 64.35,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 54,
+            "row": 4,
+            "col": 11,
+            "x_um": 58.5,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 55,
+            "row": 4,
+            "col": 10,
+            "x_um": 52.65,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 56,
+            "row": 4,
+            "col": 9,
+            "x_um": 46.8,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 57,
+            "row": 4,
+            "col": 8,
+            "x_um": 40.949999999999996,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 58,
+            "row": 4,
+            "col": 7,
+            "x_um": 35.099999999999994,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 59,
+            "row": 4,
+            "col": 6,
+            "x_um": 29.25,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 60,
+            "row": 4,
+            "col": 5,
+            "x_um": 23.4,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 61,
+            "row": 4,
+            "col": 4,
+            "x_um": 17.549999999999997,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 62,
+            "row": 4,
+            "col": 3,
+            "x_um": 11.7,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 63,
+            "row": 4,
+            "col": 2,
+            "x_um": 5.85,
+            "y_um": 23.97
+          },
+          {
+            "unit_index": 64,
+            "row": 4,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 23.97
+          }
+        ],
+        "dummy_markers_non_fab": true
+      },
+      {
+        "enabled": true,
+        "inst": "X9",
+        "cell": "sky130_fd_pr__pfet_01v8_lvt",
+        "kind": "pfet",
+        "original_w_um": 15.0,
+        "unit_w_um": 1.0,
+        "l_um": 1.0,
+        "units": 15,
+        "rows": 2,
+        "cols": 8,
+        "nf_each": 1,
+        "guard_ring": false,
+        "mode": "layout",
+        "notes": [
+          "Original MOS is represented as parallel unit devices with same D/G/S/B nets.",
+          "Use this for analog planning/matching. For strict LVS, compare summed W or keep mode=plan/off."
+        ],
+        "layout_created": true,
+        "wrapper_cell": "UNITARR_X9_15x_W1p000_L1p000",
+        "unit_cell": "GEN_X9_UNIT_sky130_fd_pr__pfet_01v8_lvt_W1.0_L1.0_nf1",
+        "unit_method": "direct_draw_mos",
+        "unit_detail": {
+          "backend": "sky130_mos_direct_draw",
+          "generator": "draw_pfet",
+          "params_used": {
+            "type": "sky130_fd_pr__pfet_01v8_lvt",
+            "l": 1.0,
+            "w": 1.0,
+            "nf": 1,
+            "bulk": "None",
+            "gate_con_pos": "alternating",
+            "sd_con_col": 1,
+            "inter_sd_l": 0.5,
+            "con_bet_fin": 1,
+            "grw": 0.17,
+            "interdig": 0,
+            "patt": ""
+          },
+          "wrap": {
+            "m_handling": "single",
+            "m": 1
+          }
+        },
+        "unit_bbox_um": {
+          "w_um": 2.21,
+          "h_um": 2.44
+        },
+        "unit_positions": [
+          {
+            "unit_index": 1,
+            "row": 1,
+            "col": 1,
+            "x_um": 0.0,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 2,
+            "row": 1,
+            "col": 2,
+            "x_um": 5.21,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 3,
+            "row": 1,
+            "col": 3,
+            "x_um": 10.42,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 4,
+            "row": 1,
+            "col": 4,
+            "x_um": 15.629999999999999,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 5,
+            "row": 1,
+            "col": 5,
+            "x_um": 20.84,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 6,
+            "row": 1,
+            "col": 6,
+            "x_um": 26.05,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 7,
+            "row": 1,
+            "col": 7,
+            "x_um": 31.259999999999998,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 8,
+            "row": 1,
+            "col": 8,
+            "x_um": 36.47,
+            "y_um": 0.0
+          },
+          {
+            "unit_index": 9,
+            "row": 2,
+            "col": 8,
+            "x_um": 36.47,
+            "y_um": 7.4399999999999995
+          },
+          {
+            "unit_index": 10,
+            "row": 2,
+            "col": 7,
+            "x_um": 31.259999999999998,
+            "y_um": 7.4399999999999995
+          },
+          {
+            "unit_index": 11,
+            "row": 2,
+            "col": 6,
+            "x_um": 26.05,
+            "y_um": 7.4399999999999995
+          },
+          {
+            "unit_index": 12,
+            "row": 2,
+            "col": 5,
+            "x_um": 20.84,
+            "y_um": 7.4399999999999995
+          },
+          {
+            "unit_index": 13,
+            "row": 2,
+            "col": 4,
+            "x_um": 15.629999999999999,
+            "y_um": 7.4399999999999995
+          },
+          {
+            "unit_index": 14,
+            "row": 2,
+            "col": 3,
+            "x_um": 10.42,
+            "y_um": 7.4399999999999995
+          },
+          {
+            "unit_index": 15,
+            "row": 2,
+            "col": 2,
+            "x_um": 5.21,
+            "y_um": 7.4399999999999995
+          }
+        ],
+        "dummy_markers_non_fab": true
+      }
+    ]
+  },
+  "device_map_card": {
+    "device_map_card": true,
+    "x_um": 412.88,
+    "y_um": 30.16,
+    "lines": 22,
+    "lines_per_col": 24,
+    "side": "right",
+    "offset_um": 60.0
+  },
+  "routing_priority_card": {
+    "routing_priority_card": false
+  },
+  "match_group_card": {
+    "match_group_card": false,
+    "common_centroid_markers": {
+      "cc_markers": false,
+      "reason": "cc disabled"
+    }
+  },
+  "topology_card": {
+    "topology_card": false
+  },
+  "layout_warnings_card": {
+    "layout_warnings_card": false
+  },
+  "device_map_files": {
+    "written": true,
+    "csv": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.device_map.csv",
+    "json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.nets.json",
+    "routing_priority_csv": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.routing_priority.csv",
+    "match_groups_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.match_groups.json",
+    "devices": 19,
+    "nets": 14,
+    "routing_nets": 14,
+    "match_groups": 4,
+    "routing_plan": {
+      "written": true,
+      "json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.routing_plan.json",
+      "csv": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.routing_plan.csv",
+      "routes": 14
+    }
+  },
+  "analogsense_files": {
+    "written": true,
+    "topology_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.topology.json",
+    "layout_warnings_csv": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.layout_warnings.csv",
+    "layout_warnings_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.layout_warnings.json",
+    "routing_recommendations_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.routing_recommendations.json",
+    "warnings": 20,
+    "topology_groups": 17,
+    "analogpro_files": {
+      "constraints_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.constraints.normalized.json",
+      "common_centroid_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.common_centroid_plan.json",
+      "dummy_plan_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.dummy_plan.json",
+      "layout_templates_json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.layout_templates.json"
+    },
+    "common_centroid_groups": 0,
+    "dummy_groups": 0
+  },
+  "unit_array_files": {
+    "written": true,
+    "json": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.unit_arrays.json",
+    "csv": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds.unit_arrays.csv",
+    "plans": 4
+  },
+  "unit_array_card": {
+    "unit_array_card": false
+  },
+  "ratlines": {
+    "enabled": true,
+    "mode": "both",
+    "include_power": false,
+    "nets": 12,
+    "points": 47,
+    "segments": 35,
+    "labelled_nets": 12,
+    "ratpoints_gds": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase_ratpoints.gds",
+    "ratlines_full_gds": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase_ratlines_full.gds"
+  },
+  "magic_drc": {
+    "magic_drc_check": false,
+    "lvs_extract": {
+      "lvs_check": false
+    },
+    "magic_safe_gds": {
+      "enabled": false,
+      "path": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds"
+    },
+    "original_gds": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/docs_wizard_showcase.gds"
+  },
+  "used": [
+    {
+      "inst": "X1",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "64",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X1_mslawic8/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X1 -spice {w} {64} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -32.439999274909496 0.789999982342124 32.439999274909496 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_YRFQK8.",
+          "Writing 'MAGIC_GR_X1_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_YRFQK8'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_YRFQK8",
+          "   Generating output for cell MAGIC_GR_X1_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X1_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X1_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X2",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "64",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X2_ycnvoij5/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X2 -spice {w} {64} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -32.439999274909496 0.789999982342124 32.439999274909496 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_YRFQK8.",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_YRFQK8'",
+          "Writing 'MAGIC_GR_X2_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_YRFQK8",
+          "   Generating output for cell MAGIC_GR_X2_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X2_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X2_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X3",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "64",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X3_d0_c3fox/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X3 -spice {w} {64} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -32.439999274909496 0.789999982342124 32.439999274909496 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_YRFQK8.",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_YRFQK8'",
+          "Writing 'MAGIC_GR_X3_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_YRFQK8",
+          "   Generating output for cell MAGIC_GR_X3_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X3_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X3_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X4",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "1",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X4_97ibyqy1/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X4 -spice {w} {1} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -0.9399999789893627 0.789999982342124 0.9399999789893627 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN.",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_SRSYDN'",
+          "Writing 'MAGIC_GR_X4_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN",
+          "   Generating output for cell MAGIC_GR_X4_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X4_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X4_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X5",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "4",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X5_51jb49e7/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X5 -spice {w} {4} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -2.43999994546175 0.789999982342124 2.43999994546175 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_DXN97Z.",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_DXN97Z'",
+          "Writing 'MAGIC_GR_X5_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_DXN97Z",
+          "   Generating output for cell MAGIC_GR_X5_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X5_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X5_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X6",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "1",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X6_kyvmuy35/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X6 -spice {w} {1} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -0.9399999789893627 0.789999982342124 0.9399999789893627 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN.",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_SRSYDN'",
+          "Writing 'MAGIC_GR_X6_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_SRSYDN",
+          "   Generating output for cell MAGIC_GR_X6_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X6_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X6_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X7",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "detail": {
+        "backend": "magic_guard_ring_mos",
+        "magic_bin": "magic",
+        "magic_rc": "/usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+        "workdir": null,
+        "tcl": null,
+        "gds_path": null,
+        "params_used": [
+          "w",
+          "4",
+          "l",
+          "1",
+          "nf",
+          "1",
+          "m",
+          "1",
+          "ad",
+          "int((nf+1)/2",
+          "as",
+          "int((nf+2)/2",
+          "pd",
+          "2*int((nf+1)/2",
+          "ps",
+          "2*int((nf+2)/2",
+          "nrd",
+          "0.29",
+          "nrs",
+          "0.29",
+          "sa",
+          "0",
+          "sb",
+          "0",
+          "sd",
+          "0",
+          "mult",
+          "1"
+        ],
+        "stdout_tail": [
+          "    ubm ",
+          "Scaled tech values by 2 / 1 to match internal grid scaling",
+          "Loading sky130A Device Generator Menu ...",
+          "Loading \"/tmp/sky130_magic_gr_X7_z873q2pt/make_guard_ring_mos.tcl\" from command line.",
+          "MAGIC_GR_INFO: PDKNAMESPACE=sky130",
+          "Root cell box:",
+          "           width x height  (   llx,  lly  ), (   urx,  ury  )",
+          "",
+          "microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)",
+          "lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )",
+          "internal:      0 x 0       (     0,  0    ), (     0,  0    )",
+          "MAGIC_GR_INFO: magic::gencell sky130::sky130_fd_pr__nfet_01v8_lvt X7 -spice {w} {4} {l} {1} {nf} {1} {m} {1} {ad} {int((nf+1)/2} {as} {int((nf+2)/2} {pd} {2*int((nf+1)/2} {ps} {2*int((nf+2)/2} {nrd} {0.29} {nrs} {0.29} {sa} {0} {sb} {0} {sd} {0} {mult} {1}",
+          "Diagnostic: Device bounding box e -0.789999982342124 -2.43999994546175 0.789999982342124 2.43999994546175 (um)",
+          "Moving label \"B\" from psubdiff to psubdiffcont in cell sky130_fd_pr__nfet_01v8_lvt_DXN97Z.",
+          "Writing 'MAGIC_GR_X7_sky130_fd_pr__nfet_01v8_lvt'",
+          "Writing 'sky130_fd_pr__nfet_01v8_lvt_DXN97Z'",
+          "Writing '(UNNAMED)'",
+          "Must specify name for cell (UNNAMED).",
+          "   Generating output for cell sky130_fd_pr__nfet_01v8_lvt_DXN97Z",
+          "   Generating output for cell MAGIC_GR_X7_sky130_fd_pr__nfet_01v8_lvt"
+        ],
+        "stderr_tail": [
+          "Cell MAGIC_GR_X7_sky130_fd_pr__nfet_01v8_lvt couldn't be read",
+          "No such file or directory",
+          "Can't write file named '(UNNAMED)'"
+        ],
+        "returncode": 0,
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        },
+        "top_cell": "MAGIC_GR_X7_sky130_fd_pr__nfet_01v8_lvt"
+      }
+    },
+    {
+      "inst": "X8",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "X9",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 15.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "X10",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "X11",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "X12",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "Xa",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "Xb",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_nfet",
+        "params_used": {
+          "type": "sky130_fd_pr__nfet_01v8_lvt",
+          "l": 1.0,
+          "w": 4.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.3,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "Xc",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_nfet",
+        "params_used": {
+          "type": "sky130_fd_pr__nfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.3,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "Xd",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_pfet",
+        "params_used": {
+          "type": "sky130_fd_pr__pfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.5,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "Xe",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_nfet",
+        "params_used": {
+          "type": "sky130_fd_pr__nfet_01v8_lvt",
+          "l": 1.0,
+          "w": 4.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.3,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "Xf",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "backend": "sky130_mos_direct_draw",
+        "generator": "draw_nfet",
+        "params_used": {
+          "type": "sky130_fd_pr__nfet_01v8_lvt",
+          "l": 1.0,
+          "w": 1.0,
+          "nf": 1,
+          "bulk": "None",
+          "gate_con_pos": "alternating",
+          "sd_con_col": 1,
+          "inter_sd_l": 0.3,
+          "con_bet_fin": 1,
+          "grw": 0.17,
+          "interdig": 0,
+          "patt": ""
+        },
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    },
+    {
+      "inst": "XQ0",
+      "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40",
+      "category": "bjt",
+      "method": "static_fixed_gds",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "detail": {
+        "gds_path": "/usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells/fixed_devices/bjt/pnp/sky130_fd_pr__pnp_05v5_W3p40L3p40.gds",
+        "wrap": {
+          "m_handling": "single",
+          "m": 1
+        }
+      }
+    }
+  ],
+  "placed": [
+    {
+      "inst": "X1",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos+unit_array",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 0.0,
+      "y_um": 0.0,
+      "nodes": [
+        "net16",
+        "net16",
+        "0",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net16",
+        "G": "net16",
+        "S": "0",
+        "B": "0"
+      },
+      "w_um": 64.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X1 net16 net16 0 0 sky130_fd_pr__nfet_01v8_lvt w={S1*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": null,
+      "match_group_id": "MAT2",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X2",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos+unit_array",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 103.2,
+      "y_um": 0.0,
+      "nodes": [
+        "net3",
+        "net03",
+        "net16",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net3",
+        "G": "net03",
+        "S": "net16",
+        "B": "0"
+      },
+      "w_um": 64.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X2 net3 net03 net16 0 sky130_fd_pr__nfet_01v8_lvt w={S2*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": null,
+      "match_group_id": "MAT2",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X3",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos+unit_array",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 206.4,
+      "y_um": 0.0,
+      "nodes": [
+        "net2",
+        "net03",
+        "net3",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net2",
+        "G": "net03",
+        "S": "net3",
+        "B": "0"
+      },
+      "w_um": 64.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X3 net2 net03 net3 0 sky130_fd_pr__nfet_01v8_lvt w={S3*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": null,
+      "match_group_id": "MAT2",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X4",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 0.0,
+      "y_um": -40.16,
+      "nodes": [
+        "net7",
+        "net19",
+        "net3",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net7",
+        "G": "net19",
+        "S": "net3",
+        "B": "0"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X4 net7 net19 net3 0 sky130_fd_pr__nfet_01v8_lvt w={S4*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": null,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X5",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 10.85,
+      "y_um": -40.16,
+      "nodes": [
+        "net19",
+        "net19",
+        "net7",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net19",
+        "G": "net19",
+        "S": "net7",
+        "B": "0"
+      },
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X5 net19 net19 net7 0 sky130_fd_pr__nfet_01v8_lvt w={S5*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": null,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X6",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 21.7,
+      "y_um": -40.16,
+      "nodes": [
+        "netbc",
+        "net13",
+        "net7",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "netbc",
+        "G": "net13",
+        "S": "net7",
+        "B": "0"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X6 netbc net13 net7 0 sky130_fd_pr__nfet_01v8_lvt w={S6*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": null,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X7",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": true,
+      "x_um": 32.55,
+      "y_um": -40.16,
+      "nodes": [
+        "net13",
+        "net13",
+        "netbc",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net13",
+        "G": "net13",
+        "S": "netbc",
+        "B": "0"
+      },
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X7 net13 net13 netbc 0 sky130_fd_pr__nfet_01v8_lvt w={S7*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": null,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "X8",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 43.4,
+      "y_um": -40.16,
+      "nodes": [
+        "net2",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "net2",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X8 net2 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S8*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": "MIRR2",
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate"
+    },
+    {
+      "inst": "X9",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos+unit_array",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 309.6,
+      "y_um": 0.0,
+      "nodes": [
+        "net03",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "net03",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 15.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X9 net03 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S9*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "match_group_id": null,
+      "match_group_type": null
+    },
+    {
+      "inst": "X10",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 53.61,
+      "y_um": -40.16,
+      "nodes": [
+        "net19",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "net19",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X10 net19 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S10*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate"
+    },
+    {
+      "inst": "X11",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 0.0,
+      "y_um": -56.15,
+      "nodes": [
+        "net13",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "net13",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X11 net13 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S11*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate"
+    },
+    {
+      "inst": "X12",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 10.21,
+      "y_um": -56.15,
+      "nodes": [
+        "net9",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "net9",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "X12 net9 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S12*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate"
+    },
+    {
+      "inst": "Xa",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 20.42,
+      "y_um": -56.15,
+      "nodes": [
+        "neta",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "neta",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "Xa neta net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S13*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate"
+    },
+    {
+      "inst": "Xb",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 30.630000000000003,
+      "y_um": -56.15,
+      "nodes": [
+        "neta",
+        "neta",
+        "netef",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "neta",
+        "G": "neta",
+        "S": "netef",
+        "B": "0"
+      },
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "Xb neta neta netef 0 sky130_fd_pr__nfet_01v8_lvt w={S14*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": null,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "Xc",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 40.480000000000004,
+      "y_um": -56.15,
+      "nodes": [
+        "netef",
+        "neta",
+        "netbc",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "netef",
+        "G": "neta",
+        "S": "netbc",
+        "B": "0"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "Xc netef neta netbc 0 sky130_fd_pr__nfet_01v8_lvt w={S15*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": null,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "Xd",
+      "cell": "sky130_fd_pr__pfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 50.330000000000005,
+      "y_um": -56.15,
+      "nodes": [
+        "netd",
+        "net2",
+        "vdd",
+        "vdd"
+      ],
+      "mos_role_nets": {
+        "D": "netd",
+        "G": "net2",
+        "S": "vdd",
+        "B": "vdd"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "Xd netd net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w={S16*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "current_mirror",
+      "topology_role": "mirror_output",
+      "topology_group": "MIRR2",
+      "match_group_id": "MIR1",
+      "match_group_type": "current_mirror_candidate"
+    },
+    {
+      "inst": "Xe",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 0.0,
+      "y_um": -71.23,
+      "nodes": [
+        "netd",
+        "netd",
+        "net9",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "netd",
+        "G": "netd",
+        "S": "net9",
+        "B": "0"
+      },
+      "w_um": 4.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "Xe netd netd net9 0 sky130_fd_pr__nfet_01v8_lvt w={S17*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "diode_connected_mos",
+      "topology_role": "reference_or_bias_device",
+      "topology_group": null,
+      "match_group_id": "MAT4",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "Xf",
+      "cell": "sky130_fd_pr__nfet_01v8_lvt",
+      "category": "mos",
+      "method": "direct_draw_mos",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 9.85,
+      "y_um": -71.23,
+      "nodes": [
+        "net9",
+        "netd",
+        "netef",
+        "0"
+      ],
+      "mos_role_nets": {
+        "D": "net9",
+        "G": "netd",
+        "S": "netef",
+        "B": "0"
+      },
+      "w_um": 1.0,
+      "l_um": 1.0,
+      "nf": 1,
+      "m": 1,
+      "raw": "Xf net9 netd netef 0 sky130_fd_pr__nfet_01v8_lvt w={S18*L} l={L} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1",
+      "topology_class": "cascode_or_stack",
+      "topology_role": "stacked_device",
+      "topology_group": null,
+      "match_group_id": "MAT3",
+      "match_group_type": "matched_dimension_candidate"
+    },
+    {
+      "inst": "XQ0",
+      "cell": "sky130_fd_pr__pnp_05v5_W3p40L3p40",
+      "category": "bjt",
+      "method": "static_fixed_gds",
+      "original_cell": null,
+      "alternate_reason": null,
+      "guard_ring": false,
+      "x_um": 19.7,
+      "y_um": -71.23,
+      "nodes": [
+        "0",
+        "0",
+        "net03",
+        "0"
+      ],
+      "mos_role_nets": null,
+      "w_um": null,
+      "l_um": null,
+      "nf": 1,
+      "m": 1,
+      "raw": "XQ0 0 0 net03 0 sky130_fd_pr__pnp_05v5_W3p40L3p40 M=1",
+      "topology_class": "bjt_branch",
+      "topology_role": "vertical_bjt_or_bipolar_device",
+      "topology_group": null,
+      "match_group_id": null,
+      "match_group_type": null
+    }
+  ],
+  "missing": [],
+  "output_bundle": {
+    "enabled": true,
+    "run_dir": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957",
+    "manifest": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/manifest.json",
+    "constraints_template": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/BGR_constraints_template.yaml",
+    "rerun_script": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/rerun.sh",
+    "readme": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/README_run.md",
+    "dashboard": "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/docs_wizard_showcase_20260701_193957/index.html",
+    "files_count": 25
+  }
+}

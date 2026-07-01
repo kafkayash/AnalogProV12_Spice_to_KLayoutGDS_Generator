@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "template_mode": "auto",
+  "templates": [
+    {
+      "name": "bgr",
+      "placement": "pmos_mirror_top__nmos_stacks_middle__bjt_reference_near_related_net",
+      "status": "active_if_topology_matches"
+    },
+    {
+      "name": "current_mirror",
+      "placement": "aligned row plus common-centroid plan/markers",
+      "status": "active_if_mirror_detected"
+    },
+    {
+      "name": "stack",
+      "placement": "vertical source-drain columns",
+      "status": "active_if_stack_detected"
+    }
+  ],
+  "notes": [
+    "auto/bgr template keeps PMOS mirrors aligned, NMOS stacks column-oriented, and BJT/reference branch nearby.",
+    "current mirror common-centroid plans are generated in common_centroid_plan.json."
+  ]
+}

@@ -1,0 +1,15 @@
+severity,inst,category,message,recommendation
+medium,X1,large_single_finger_mos,Large MOS W=64um with nf=1.,"Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+medium,X2,large_single_finger_mos,Large MOS W=64um with nf=1.,"Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+medium,X3,large_single_finger_mos,Large MOS W=64um with nf=1.,"Consider multi-finger/interdigitated placement or explicit nf to improve gate resistance, diffusion sharing, and matching."
+low,X5,source_body_difference,Source=net7 and body=0 differ in an analog-sensitive topology.,Check body effect impact and matching; keep body ties symmetric if intentional.
+low,X7,source_body_difference,Source=netbc and body=0 differ in an analog-sensitive topology.,Check body effect impact and matching; keep body ties symmetric if intentional.
+low,Xb,source_body_difference,Source=netef and body=0 differ in an analog-sensitive topology.,Check body effect impact and matching; keep body ties symmetric if intentional.
+low,Xe,source_body_difference,Source=net9 and body=0 differ in an analog-sensitive topology.,Check body effect impact and matching; keep body ties symmetric if intentional.
+info,XQ0,bjt_branch,BJT/fixed primitive detected.,"Keep BJT/reference branch close, avoid thermal gradients, and consider common-centroid/thermal symmetry if multiple BJTs are present."
+info,X1,diode_connected_mos,MOS is diode-connected D=G.,Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly.
+info,X5,diode_connected_mos,MOS is diode-connected D=G.,Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly.
+info,X7,diode_connected_mos,MOS is diode-connected D=G.,Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly.
+info,X8,diode_connected_mos,MOS is diode-connected D=G.,Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly.
+info,Xb,diode_connected_mos,MOS is diode-connected D=G.,Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly.
+info,Xe,diode_connected_mos,MOS is diode-connected D=G.,Keep reference/bias diode MOS close to its mirror outputs and route gate/drain net compactly.

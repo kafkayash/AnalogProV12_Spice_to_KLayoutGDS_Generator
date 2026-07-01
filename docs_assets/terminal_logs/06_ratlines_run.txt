@@ -1,0 +1,131 @@
+/home/kafkayash/ASIC_eda/klayout_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py:431: DeprecationWarning: ast.Num is deprecated and will be removed in Python 3.14; use ast.Constant instead
+  ast.Expression, ast.BinOp, ast.UnaryOp, ast.Num, ast.Constant, ast.Name,
+/home/kafkayash/ASIC_eda/klayout_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py:437: DeprecationWarning: ast.Num is deprecated and will be removed in Python 3.14; use ast.Constant instead
+  if not isinstance(node, allowed_nodes):
+/home/kafkayash/ASIC_eda/klayout_scripts/skyspice2klayout_all_devices_magicgr_analogproplus.py:449: DeprecationWarning: ast.Num is deprecated and will be removed in Python 3.14; use ast.Constant instead
+  if isinstance(node, ast.Num):
+========== skyspice2klayout ALL-DEVICES ==========
+PDK_ROOT          : /usr/local/share/pdk
+PDK               : sky130A
+PDKPATH           : /usr/local/share/pdk/sky130A
+KLAYOUT_PY_SITE   : /home/kafkayash/klayout_gf7/lib/python3.12/site-packages
+SKY_GR_BACKEND    : magic
+SKY_PLACE_MODE    : compact
+SKY_PIN_LABELS    : True
+SKY_NET_GUIDES    : True
+SKY_GUIDE_MODE    : important
+SKY_GUIDE_STYLE   : off
+SKY_TOP_GUIDES    : False
+SKY_MOVABLE_WRAP  : False
+SKY_LOCAL_STUBS   : False
+SKY_ANALOGSENSE   : True
+SKY_LAYOUT_STYLE  : analog
+SKY_PLACEMENT_STYLE: analogpro
+SKY_RATLINE_GDS   : both
+SKY_MAGIC_ALL_GR  : False
+SKY_UNIT_ARRAY    : plan minW= 8.0 unitW= 1.0
+SKY_GUIDE_NETS    : <auto>
+SKY_MAP_SIDE      : right
+SKY_MATCH_GROUPS  : True
+SKY_MAGIC_BIN     : magic
+SKY_MAGIC_RC      : /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc
+CELLS_PY_ROOT     : /usr/local/share/pdk/sky130A/libs.tech/klayout/python
+FIXED_DEVICES_DIR : /usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells/fixed_devices
+LIBS_REF_DIR      : /usr/local/share/pdk/sky130A/libs.ref
+NETLIST           : /home/kafkayash/Analogprov12plus_runs/examples/BGR_sky130_ckt.spice
+OUT_GDS           : /home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds
+TOP               : TOP_AUTOPLACED_FROM_SPICE
+==================================================
+Fixed-device GDS cells indexed: 284
+
+Parsed devices/cells:
+  X1                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=64.0 L=1.0 nf=1 m=1 nodes=net16,net16,0,0
+  X2                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=64.0 L=1.0 nf=1 m=1 nodes=net3,net03,net16,0
+  X3                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=64.0 L=1.0 nf=1 m=1 nodes=net2,net03,net3,0
+  X4                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=net7,net19,net3,0
+  X5                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=4.0 L=1.0 nf=1 m=1 nodes=net19,net19,net7,0
+  X6                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=netbc,net13,net7,0
+  X7                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=4.0 L=1.0 nf=1 m=1 nodes=net13,net13,netbc,0
+  X8                 sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=net2,net2,vdd,vdd
+  X9                 sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=15.0 L=1.0 nf=1 m=1 nodes=net03,net2,vdd,vdd
+  X10                sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=net19,net2,vdd,vdd
+  X11                sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=net13,net2,vdd,vdd
+  X12                sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=net9,net2,vdd,vdd
+  Xa                 sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=neta,net2,vdd,vdd
+  Xb                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=4.0 L=1.0 nf=1 m=1 nodes=neta,neta,netef,0
+  Xc                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=netef,neta,netbc,0
+  Xd                 sky130_fd_pr__pfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=netd,net2,vdd,vdd
+  Xe                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=4.0 L=1.0 nf=1 m=1 nodes=netd,netd,net9,0
+  Xf                 sky130_fd_pr__nfet_01v8_lvt                             cat=mos           W=1.0 L=1.0 nf=1 m=1 nodes=net9,netd,netef,0
+  XQ0                sky130_fd_pr__pnp_05v5_W3p40L3p40                       cat=bjt           W=None L=None nf=1 m=1 nodes=0,0,net03,0
+
+Supported MOSFETs found for optional guard rings:
+   1) X1           sky130_fd_pr__nfet_01v8_lvt      W=64.0 L=1.0 nf=1 m=1 nodes=net16,net16,0,0
+   2) X2           sky130_fd_pr__nfet_01v8_lvt      W=64.0 L=1.0 nf=1 m=1 nodes=net3,net03,net16,0
+   3) X3           sky130_fd_pr__nfet_01v8_lvt      W=64.0 L=1.0 nf=1 m=1 nodes=net2,net03,net3,0
+   4) X4           sky130_fd_pr__nfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=net7,net19,net3,0
+   5) X5           sky130_fd_pr__nfet_01v8_lvt      W=4.0 L=1.0 nf=1 m=1 nodes=net19,net19,net7,0
+   6) X6           sky130_fd_pr__nfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=netbc,net13,net7,0
+   7) X7           sky130_fd_pr__nfet_01v8_lvt      W=4.0 L=1.0 nf=1 m=1 nodes=net13,net13,netbc,0
+   8) X8           sky130_fd_pr__pfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=net2,net2,vdd,vdd
+   9) X9           sky130_fd_pr__pfet_01v8_lvt      W=15.0 L=1.0 nf=1 m=1 nodes=net03,net2,vdd,vdd
+  10) X10          sky130_fd_pr__pfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=net19,net2,vdd,vdd
+  11) X11          sky130_fd_pr__pfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=net13,net2,vdd,vdd
+  12) X12          sky130_fd_pr__pfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=net9,net2,vdd,vdd
+  13) Xa           sky130_fd_pr__pfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=neta,net2,vdd,vdd
+  14) Xb           sky130_fd_pr__nfet_01v8_lvt      W=4.0 L=1.0 nf=1 m=1 nodes=neta,neta,netef,0
+  15) Xc           sky130_fd_pr__nfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=netef,neta,netbc,0
+  16) Xd           sky130_fd_pr__pfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=netd,net2,vdd,vdd
+  17) Xe           sky130_fd_pr__nfet_01v8_lvt      W=4.0 L=1.0 nf=1 m=1 nodes=netd,netd,net9,0
+  18) Xf           sky130_fd_pr__nfet_01v8_lvt      W=1.0 L=1.0 nf=1 m=1 nodes=net9,netd,netef,0
+Add guard rings to selected FETs? [y/N]: Type FET instance names/numbers, or 'all' [default all]: 
+Guard rings enabled for: x1, x10, x11, x12, x2, x3, x4, x5, x6, x7, x8, x9, xa, xb, xc, xd, xe, xf
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X1_7p9wdgpw/MAGIC_GR_X1_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X2_aw_stejk/MAGIC_GR_X2_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X3_fd8ph78l/MAGIC_GR_X3_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X4_1azpjjyr/MAGIC_GR_X4_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X5_gkx75z1p/MAGIC_GR_X5_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X6_pyeb47z2/MAGIC_GR_X6_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X7_rigyzu8w/MAGIC_GR_X7_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X8_gzxf_k3v/MAGIC_GR_X8_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X9_1odia0c1/MAGIC_GR_X9_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X10_r7p1afnt/MAGIC_GR_X10_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X11_mqtbljiz/MAGIC_GR_X11_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_X12_3etaaa7o/MAGIC_GR_X12_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_Xa_903jn9xt/MAGIC_GR_Xa_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_Xb_mek9u2w4/MAGIC_GR_Xb_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_Xc_ne1ycx5_/MAGIC_GR_Xc_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_Xd_4ikawduc/MAGIC_GR_Xd_sky130_fd_pr__pfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_Xe_s6g3znwj/MAGIC_GR_Xe_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading Magic guard-ring GDS: /tmp/sky130_magic_gr_Xf_36z7xnlf/MAGIC_GR_Xf_sky130_fd_pr__nfet_01v8_lvt.gds
+Reading GDS: /usr/local/share/pdk/sky130A/libs.tech/klayout/python/cells/fixed_devices/bjt/pnp/sky130_fd_pr__pnp_05v5_W3p40L3p40.gds
+
+========== RESULT ALL-DEVICES ==========
+Placed          : 19
+Missing         : 0
+Fixed GDS used  : 1
+libs.ref used   : 0
+Direct draw used: 18
+Guard-ring FETs : 18
+MOS pairs       : 0
+Placement style : analogpro
+Rails           : {'rails_added': True, 'vdd_net': 'vdd', 'gnd_net': 'GND', 'x0_um': -10.0, 'x1_um': 114.72000000000001}
+Net guides      : {'net_guides': False, 'mode': 'important', 'guide_style': 'off', 'reason': 'top-level static guide lines disabled; using movable local stubs'}
+Ratline GDS     : {'enabled': True, 'mode': 'both', 'include_power': False, 'nets': 12, 'points': 47, 'segments': 35, 'labelled_nets': 12, 'ratpoints_gds': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines_ratpoints.gds', 'ratlines_full_gds': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines_ratlines_full.gds'}
+Routing priority: {'nets': 14, 'top': ['0', 'vdd', 'net2', 'net03', 'netd']}
+Matched groups  : {'count': 4, 'enabled': True}
+Topology groups : {'count': 17, 'enabled': True}
+Layout warnings : {'count': 14, 'enabled': True}
+Device map      : {'written': True, 'csv': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.device_map.csv', 'json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.nets.json', 'routing_priority_csv': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.routing_priority.csv', 'match_groups_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.match_groups.json', 'devices': 19, 'nets': 14, 'routing_nets': 14, 'match_groups': 4, 'routing_plan': {'written': True, 'json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.routing_plan.json', 'csv': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.routing_plan.csv', 'routes': 14}}
+AnalogSense     : {'written': True, 'topology_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.topology.json', 'layout_warnings_csv': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.layout_warnings.csv', 'layout_warnings_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.layout_warnings.json', 'routing_recommendations_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.routing_recommendations.json', 'warnings': 14, 'topology_groups': 17, 'analogpro_files': {'constraints_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.constraints.normalized.json', 'common_centroid_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.common_centroid_plan.json', 'dummy_plan_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.dummy_plan.json', 'layout_templates_json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.layout_templates.json'}, 'common_centroid_groups': 1, 'dummy_groups': 1}
+Unit arrays     : {'mode': 'plan', 'planned': 4, 'replaced': 0}
+Unit array files: {'written': True, 'json': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.unit_arrays.json', 'csv': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.unit_arrays.csv', 'plans': 4}
+Magic DRC       : {'magic_drc_check': False, 'lvs_extract': {'lvs_check': False}, 'magic_safe_gds': {'enabled': False, 'path': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds'}, 'original_gds': '/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds'}
+Output GDS      : /home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds
+Output folder   : /home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057
+Dashboard       : /home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/index.html
+Report          : /home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds.report.json
+
+Open with:
+  KLAYOUT_PATH="/usr/local/share/pdk/sky130A/libs.tech/klayout" klayout -e "/home/kafkayash/Analogprov12plus_runs/skyspice_runs/test_ratlines_20260701_193057/test_ratlines.gds"
+========================================
