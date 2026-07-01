@@ -29,6 +29,7 @@ This is not a commercial EDA tool, not a signoff flow, and not a replacement for
 - [Troubleshooting](#troubleshooting)
 - [Validation order](#validation-order)
 - [Final note](#final-note)
+- For a detailed visual walkthrough with KLayout screenshots, terminal logs, ratline views, schematic-oriented placement, and wizard-mode output, see the [`showcase-screenshots`](https://github.com/kafyash/AnalogProV12_Spice_to_KLayoutGDS_Generator/tree/showcase-screenshots) branch.
 
 ## Project scope
 
